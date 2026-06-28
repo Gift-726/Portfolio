@@ -63,17 +63,21 @@ export default function Navbar() {
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5 }}
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          scrolled ? "glass-nav py-3" : "bg-transparent py-5"
-        }`}
+        className="fixed top-6 left-0 right-0 z-50 flex justify-center px-4 sm:px-6 md:px-8 pointer-events-none"
       >
-        <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
+        <div 
+          className={`w-full max-w-7xl px-6 py-3.5 flex items-center justify-between rounded-[20px] transition-all duration-300 border backdrop-blur-xl pointer-events-auto ${
+            scrolled
+              ? "bg-forest-green/85 border-white/12 shadow-lg shadow-forest-green/15"
+              : "bg-white/[0.04] border-white/6 shadow-none"
+          }`}
+        >
           {/* Left section: Logo */}
           <div 
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             className="flex items-center gap-3 cursor-pointer group"
           >
-            <div className="relative w-11 h-11 transition-transform duration-300 group-hover:scale-105">
+            <div className="relative w-10 h-10 transition-transform duration-300 group-hover:scale-105">
               <img
                 src="/images/Logo-light-bg.svg"
                 alt="Goodness Ayano Logo"
@@ -132,11 +136,11 @@ export default function Navbar() {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-            exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.3 }}
-            className="md:hidden fixed top-[72px] left-0 right-0 z-40 bg-forest-green/95 border-b border-white/10 backdrop-blur-lg overflow-hidden py-6 px-6"
+            initial={{ opacity: 0, y: 10, scale: 0.95 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: 10, scale: 0.95 }}
+            transition={{ duration: 0.2 }}
+            className="md:hidden fixed top-[96px] left-4 right-4 z-40 bg-forest-green/95 border border-white/10 rounded-[20px] backdrop-blur-xl overflow-hidden py-6 px-6 shadow-2xl"
           >
             <div className="flex flex-col gap-5">
               {navLinks.map((link) => (

@@ -20,7 +20,7 @@ export default function CaseStudies() {
       badge: "Mobile App",
       title: "iWish - A Community-Powered Social Gifting Platform",
       description: "Designed a platform that enables users to create wishes, receive contributions, and manage gifting experiences through a seamless digital journey.",
-      image: "/images/case-studies/iWish.png",
+      image: "/images/case-studies/Case 1.png",
       readLink: "#",
       liveLink: "#",
     },
@@ -29,7 +29,7 @@ export default function CaseStudies() {
       badge: "SaaS Platform",
       title: "BMS - Streamlining Auto Workshop Operations",
       description: "Streamlining auto repair workshop operations with a centralized system for service management, inventory tracking, and customer interactions.",
-      image: "/images/case-studies/BMS.png",
+      image: "/images/case-studies/Case 2.png",
       readLink: "#",
       liveLink: "#",
     },
@@ -38,14 +38,14 @@ export default function CaseStudies() {
       badge: "Community Platform",
       title: "Page234 - Building a Community Around Reading",
       description: "Designed a social reading platform that encourages engagement through discussions, reading groups, and community-driven interactions.",
-      image: "/images/case-studies/page234.png",
+      image: "/images/case-studies/Case 3.png",
       readLink: "#",
       liveLink: "#",
     },
   ];
 
   return (
-    <section id="case-studies" className="bg-[#F4F9F5] py-20 md:py-28 relative">
+    <section id="case-studies" className="bg-[#F3F9ed] py-20 md:py-28 relative">
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <motion.div
@@ -88,12 +88,12 @@ export default function CaseStudies() {
                 </span>
 
                 {/* Title */}
-                <h3 className="text-xl md:text-2xl font-bold text-dark-neutral mb-3 leading-snug font-heading group-hover:text-forest-green transition-colors">
+                <h3 className="text-xl md:text-xl font-bold text-dark-neutral mb-3 leading-snug font-heading group-hover:text-forest-green transition-colors">
                   {project.title}
                 </h3>
 
                 {/* Description */}
-                <p className="text-muted-neutral text-sm md:text-base leading-relaxed font-light mb-6">
+                <p className="text-muted-neutral text-sm md:text-base leading-relaxed font-light mb-0">
                   {project.description}
                 </p>
               </div>

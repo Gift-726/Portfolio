@@ -10,9 +10,9 @@ export default function TrustBar() {
 
   return (
     <section className="bg-card-white border-y border-off-white py-12 md:py-16 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
         {/* Left Column (40% on large viewports) */}
-        <div className="lg:col-span-5 text-left border-l-4 border-lime-green pl-6 py-2">
+        <div className="lg:col-span-5 text-left lg:border-r border-lime-green/30 lg:pr-8 py-2">
           <h2 className="text-2xl font-bold tracking-tight text-dark-neutral mb-3 font-heading">
             Trusted By Innovative Teams
           </h2>
@@ -22,7 +22,7 @@ export default function TrustBar() {
         </div>
 
         {/* Right Column (60% on large viewports - Carousel) */}
-        <div className="lg:col-span-7 relative w-full overflow-hidden py-4">
+        <div className="lg:col-span-7 relative w-full overflow-hidden py-4 lg:pl-4">
           {/* Gradient shadows for masking edges */}
           <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-card-white to-transparent z-10 pointer-events-none" />
           <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-card-white to-transparent z-10 pointer-events-none" />

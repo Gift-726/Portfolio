@@ -1,27 +1,27 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ZoomIn } from "lucide-react";
+import { ZoomIn, ChevronLeft, ChevronRight, X } from "lucide-react";
 import { useState } from "react";
 
 export default function ArtifactsGrid() {
   // 12 items. We use Image (1).png to Image (9).png, and repeat Image (9).png for 10, 11, 12.
   const artifacts = [
-    { id: 1, image: "/images/design-artifact-img/Image (1).png", title: "Humanoid Landing Page Exploration" },
-    { id: 2, image: "/images/design-artifact-img/Image (2).png", title: "Premium E-Commerce Mockup" },
-    { id: 3, image: "/images/design-artifact-img/Image (3).png", title: "EdTech Dashboard Component" },
-    { id: 4, image: "/images/design-artifact-img/Image (4).png", title: "Creative Branding & Poster Layout" },
-    { id: 5, image: "/images/design-artifact-img/Image (5).png", title: "Mobile UI System Guidelines" },
-    { id: 6, image: "/images/design-artifact-img/Image (6).png", title: "Humanoid Dashboard Interface" },
-    { id: 7, image: "/images/design-artifact-img/Image (7).png", title: "Financial Admin Dashboard UX" },
-    { id: 8, image: "/images/design-artifact-img/Image (8).png", title: "Seamtrack App Welcome View" },
-    { id: 9, image: "/images/design-artifact-img/Image (9).png", title: "Responsive Product Specs Mockup" },
-    { id: 10, image: "/images/design-artifact-img/Image (9).png", title: "Analytics Chart UI Component" },
-    { id: 11, image: "/images/design-artifact-img/Image (9).png", title: "Clean Web Design Elements" },
-    { id: 12, image: "/images/design-artifact-img/Image (9).png", title: "Interactive Design System Tokens" },
+    { id: 1, image: "/images/design-artifact-img/At1.png", title: "Humanoid Landing Page Exploration" },
+    { id: 2, image: "/images/design-artifact-img/At2.png", title: "Premium E-Commerce Mockup" },
+    { id: 3, image: "/images/design-artifact-img/At3.png", title: "EdTech Dashboard Component" },
+    { id: 4, image: "/images/design-artifact-img/At4.png", title: "Creative Branding & Poster Layout" },
+    { id: 5, image: "/images/design-artifact-img/At5.png", title: "Mobile UI System Guidelines" },
+    { id: 6, image: "/images/design-artifact-img/At6.png", title: "Humanoid Dashboard Interface" },
+    { id: 7, image: "/images/design-artifact-img/At7.png", title: "Financial Admin Dashboard UX" },
+    { id: 8, image: "/images/design-artifact-img/At8.png", title: "Seamtrack App Welcome View" },
+    { id: 9, image: "/images/design-artifact-img/At9.png", title: "Responsive Product Specs Mockup" },
+    { id: 10, image: "/images/design-artifact-img/At10.png", title: "Analytics Chart UI Component" },
+    { id: 11, image: "/images/design-artifact-img/At11.png", title: "Clean Web Design Elements" },
+    { id: 12, image: "/images/design-artifact-img/At12.png", title: "Interactive Design System Tokens" },
   ];
 
-  const [activeImage, setActiveImage] = useState<string | null>(null);
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   return (
     <section id="artifacts" className="bg-card-white py-20 md:py-28 relative">
@@ -51,7 +51,7 @@ export default function ArtifactsGrid() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.5, delay: (index % 4) * 0.1 }}
-              onClick={() => setActiveImage(art.image)}
+              onClick={() => setActiveIndex(index)}
               className="group relative aspect-square w-full rounded-2xl overflow-hidden bg-off-white border border-black/[0.04] shadow-sm cursor-pointer"
             >
               {/* Image */}
@@ -81,17 +81,94 @@ export default function ArtifactsGrid() {
       </div>
 
       {/* Lightbox / Modal for Image Preview */}
-      {activeImage && (
+      {activeIndex !== null && (
         <div
-          onClick={() => setActiveImage(null)}
-          className="fixed inset-0 bg-black/95 z-50 flex items-center justify-center p-4 cursor-zoom-out animate-fade-in"
+          onClick={() => setActiveIndex(null)}
+          className="fixed inset-0 bg-black/95 z-50 flex flex-col items-center justify-between p-4 md:p-6 animate-fade-in"
         >
-          <div className="relative max-w-4xl max-h-[85vh] w-full h-full flex items-center justify-center">
-            <img
-              src={activeImage}
-              alt="Design Exploration Preview"
-              className="max-w-full max-h-full object-contain rounded-lg shadow-2xl"
-            />
+          {/* Close Button */}
+          <button
+            onClick={() => setActiveIndex(null)}
+            className="absolute top-4 right-4 md:top-6 md:right-6 text-white/70 hover:text-white hover:scale-110 transition-all cursor-pointer z-50 p-2"
+            aria-label="Close lightbox"
+          >
+            <X className="w-8 h-8" />
+          </button>
+
+          {/* Left Click Zone (Prev) */}
+          <div
+            onClick={(e) => {
+              e.stopPropagation();
+              setActiveIndex((prev) => (prev !== null ? (prev === 0 ? artifacts.length - 1 : prev - 1) : null));
+            }}
+            className="absolute left-0 top-0 bottom-0 w-[20%] cursor-pointer z-30 flex items-center justify-start pl-4 md:pl-8 group/side"
+            title="Previous Image"
+          >
+            <div className="bg-black/50 group-hover/side:bg-black/80 text-white p-3 rounded-full hover:scale-105 transition-all border border-white/10 opacity-40 group-hover/side:opacity-100 flex items-center justify-center">
+              <ChevronLeft className="w-6 h-6" />
+            </div>
+          </div>
+
+          {/* Right Click Zone (Next) */}
+          <div
+            onClick={(e) => {
+              e.stopPropagation();
+              setActiveIndex((prev) => (prev !== null ? (prev === artifacts.length - 1 ? 0 : prev + 1) : null));
+            }}
+            className="absolute right-0 top-0 bottom-0 w-[20%] cursor-pointer z-30 flex items-center justify-end pr-4 md:pr-8 group/side"
+            title="Next Image"
+          >
+            <div className="bg-black/50 group-hover/side:bg-black/80 text-white p-3 rounded-full hover:scale-105 transition-all border border-white/10 opacity-40 group-hover/side:opacity-100 flex items-center justify-center">
+              <ChevronRight className="w-6 h-6" />
+            </div>
+          </div>
+
+          {/* Title bar (Desktop only) */}
+          <div className="text-center pt-2 pb-1 z-10 w-full max-w-2xl hidden md:block">
+            <h4 className="text-white text-lg font-bold font-heading line-clamp-1">
+              {artifacts[activeIndex].title}
+            </h4>
+          </div>
+
+          {/* Main Preview Container */}
+          <div 
+            onClick={(e) => e.stopPropagation()} 
+            className="relative flex items-center justify-center w-full max-w-3xl flex-grow my-2 z-20"
+          >
+            {/* Active Preview Image */}
+            <div className="h-full w-full flex items-center justify-center max-h-[65vh] select-none">
+              <img
+                src={artifacts[activeIndex].image}
+                alt={artifacts[activeIndex].title}
+                className="max-w-full max-h-full object-contain rounded-lg shadow-2xl transition-all duration-300"
+              />
+            </div>
+          </div>
+
+          {/* Thumbnail list row */}
+          <div 
+            onClick={(e) => e.stopPropagation()} 
+            className="w-full max-w-5xl overflow-x-auto py-3 px-2 no-scrollbar z-40 flex-shrink-0"
+          >
+            <div className="flex justify-start md:justify-center items-center gap-3 w-max mx-auto px-4">
+              {artifacts.map((art, idx) => (
+                <button
+                  key={art.id}
+                  onClick={() => setActiveIndex(idx)}
+                  className={`relative w-16 h-16 sm:w-20 sm:h-20 aspect-square rounded-xl overflow-hidden border-2 cursor-pointer transition-all duration-200 flex-shrink-0 ${
+                    activeIndex === idx 
+                      ? "border-lime-green scale-105 shadow-md shadow-lime-green/30" 
+                      : "border-transparent opacity-40 hover:opacity-100"
+                  }`}
+                >
+                  <img
+                    src={art.image}
+                    alt={art.title}
+                    className="w-full h-full object-cover"
+                  />
+                </button>
+              ))}
+            </div>
           </div>
         </div>
       )}

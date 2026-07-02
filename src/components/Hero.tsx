@@ -94,7 +94,7 @@ export default function Hero() {
           {/* CTA Buttons */}
           <motion.div
             variants={itemVariants}
-            className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto mb-4"
+            className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto mb-10"
           >
             <button
               onClick={() => scrollToSection("case-studies")}
@@ -120,19 +120,19 @@ export default function Hero() {
               <p className="text-lime-green text-sm font-medium mb-1">
                 Products Designed
               </p>
-              <p className="text-3xl font-bold text-white tracking-tight">10+</p>
+              <p className="text-2xl font-bold text-white tracking-tight">10+</p>
             </div>
             <div className="sm:border-l border-white/15 pt-0 sm:pl-8">
               <p className="text-lime-green text-sm font-medium mb-1">
                 Experience
               </p>
-              <p className="text-3xl font-bold text-white tracking-tight">6 Years+</p>
+              <p className="text-2xl font-bold text-white tracking-tight">6 Years+</p>
             </div>
             <div className="sm:border-l border-white/15 pt-0 sm:pl-8">
               <p className="text-lime-green text-sm font-medium mb-1">
                 Open to
               </p>
-              <p className="text-lg font-bold text-white leading-tight">
+              <p className="text-2xl font-bold text-white leading-tight">
                 Product Design Opportunities
               </p>
             </div>
@@ -145,7 +145,7 @@ export default function Hero() {
             variants={avatarVariants}
             initial="hidden"
             animate="visible"
-            className="relative w-full max-w-[340px] lg:max-w-[392px] aspect-[4/5] h-auto lg:h-[490px] overflow-visible"
+            className="relative w-full max-w-[340px] lg:max-w-[384px] aspect-[4/5] h-auto lg:h-[470px] overflow-visible"
           >
             {/* Top-Right Starburst Decor (under the image) */}
             <motion.div

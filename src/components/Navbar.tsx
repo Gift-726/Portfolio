@@ -61,13 +61,13 @@ export default function Navbar() {
     <>
       {/* Top viewport blur overlay to mask scrolling content above the navbar */}
       <div 
-        className={`fixed top-0 left-0 right-0 h-[70px] pointer-events-none z-40 transition-opacity duration-300 ${
+        className={`fixed top-0 left-0 right-0 h-[100px] pointer-events-none z-40 transition-opacity duration-300 ${
           scrolled ? "opacity-100" : "opacity-0"
         }`}
         style={{
-          background: "linear-gradient(to bottom, rgba(0, 40, 28, 0.95) 0%, rgba(0, 40, 28, 0.5) 60%, rgba(0, 40, 28, 0) 100%)",
-          backdropFilter: "blur(12px)",
-          WebkitBackdropFilter: "blur(12px)",
+          // background: "linear-gradient(to bottom, rgba(0, 40, 28, 0.95) 0%, rgba(0, 40, 28, 0.5) 60%, rgba(0, 40, 28, 0) 100%)",
+          backdropFilter: "blur(24px)",
+          WebkitBackdropFilter: "blur(20px)",
         }}
       />
 
@@ -78,7 +78,7 @@ export default function Navbar() {
         className="fixed top-6 left-0 right-0 z-50 flex justify-center px-4 sm:px-6 md:px-8 pointer-events-none"
       >
         <div 
-          className={`w-full max-w-7xl px-6 py-3.5 flex items-center justify-between rounded-[20px] transition-all duration-300 border backdrop-blur-xl pointer-events-auto ${
+          className={`w-full max-w-7xl px-6 py-6 flex items-center justify-between rounded-[20px] transition-all duration-300 border backdrop-blur-xl pointer-events-auto ${
             scrolled
               ? "bg-forest-green/85 border-white/12 shadow-lg shadow-forest-green/15"
               : "bg-white/[0.04] border-white/6 shadow-none"

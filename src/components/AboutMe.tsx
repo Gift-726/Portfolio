@@ -77,12 +77,18 @@ export default function AboutMe() {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              className="absolute -top-7 -right-7 w-14 h-14 pointer-events-none select-none z-20"
+              className="absolute -top-8 -right-8 w-16 h-16 pointer-events-none select-none z-20"
             >
-              <img
-                src="/images/star-image.png"
+              <motion.img
+                src="/images/star-image.svg"
                 alt="Starburst Orange Accent Decor"
                 className="w-full h-full object-contain filter drop-shadow-md"
+                animate={{ rotate: 360 }}
+                transition={{
+                  repeat: Infinity,
+                  duration: 12,
+                  ease: "linear"
+                }}
               />
             </motion.div>
           </div>

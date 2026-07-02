@@ -50,11 +50,14 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative bg-forest-green text-white min-h-screen pt-28 pb-16 md:pt-36 md:pb-24 flex items-center overflow-hidden">
+    <section 
+      className="relative text-white min-h-screen pt-28 pb-16 md:pt-36 md:pb-24 flex items-center overflow-hidden"
+      style={{ background: "linear-gradient(180deg, #00281C 28.99%, #000A07 132.91%)" }}
+    >
       {/* Background radial highlight */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_120%,rgba(140,227,67,0.08),transparent_50%)] pointer-events-none" />
 
-      <div className="max-w-7xl mx-auto px-6 w-full relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+      <div className="max-w-7xl mx-auto px-6 w-full relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-3 items-center lg:items-stretch">
         {/* Left Column (Copy and CTAs) */}
         <motion.div
           variants={containerVariants}
@@ -65,26 +68,24 @@ export default function Hero() {
           {/* Badge */}
           <motion.div
             variants={itemVariants}
-            className="flex items-center gap-2 px-4 py-1.5 rounded-full bg-accent-green/40 border border-white/10 text-lime-green text-xs font-semibold uppercase tracking-wider mb-6"
+            className="inline-flex items-center gap-10 px-4 py-2 mt-5 rounded-full bg-transparent border border-lime-green/60 text-white text-sm font-medium mb-8"
           >
-            <span className="w-1.5 h-1.5 rounded-full bg-lime-green animate-pulse" />
-            👋 Hi, I'm Goodness Ayano
+            {/* <span className="w-2 h-2 rounded-full bg-lime-green shadow-[0_0_8px_rgba(140,227,67,0.8)]" /> */}
+            <span>👋 Hi, I'm <span className="text-lime-green font-semibold">Goodness Ayano</span></span>
           </motion.div>
 
           {/* Heading */}
           <motion.h1
             variants={itemVariants}
-            className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight leading-[1.1] mb-6 font-heading"
+            className="text-2xl sm:text-5xl md:text-[50px] font-extrabold tracking-tight leading-[1.1] mb-6 font-heading max-w-[2000px]"
           >
-            Designing Products{" "}
-            <span className="text-lime-green relative">People</span> Love and{" "}
-            <span className="text-lime-green relative">Businesses</span> Value
+            Designing Products <span className="text-lime-green">People</span> Love and <span className="text-lime-green">Businesses</span> Value
           </motion.h1>
 
           {/* Subheading */}
           <motion.p
             variants={itemVariants}
-            className="text-white/70 text-lg md:text-xl font-light leading-relaxed max-w-xl mb-8"
+            className="text-white/70 text-lg md:text-xl font-light leading-relaxed max-w-[1000px] mb-8"
           >
             I craft user-centered digital experiences that simplify complexity,
             solve meaningful problems, and help organizations achieve measurable outcomes.
@@ -93,17 +94,17 @@ export default function Hero() {
           {/* CTA Buttons */}
           <motion.div
             variants={itemVariants}
-            className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto mb-12"
+            className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto mb-4"
           >
             <button
               onClick={() => scrollToSection("case-studies")}
-              className="bg-lime-green text-forest-green font-bold text-base px-8 py-4 rounded-full flex items-center justify-center gap-2 transition-all duration-300 shadow-lg shadow-lime-green/10 hover:shadow-lime-green/20 hover:scale-[1.02] active:scale-[0.98] cursor-pointer"
+              className="bg-lime-green text-forest-green font-bold text-base px-8 py-4 rounded-xl flex items-center justify-center gap-2 transition-all duration-300 shadow-lg shadow-lime-green/10 hover:shadow-lime-green/20 hover:scale-[1.02] active:scale-[0.98] cursor-pointer"
             >
               View Case Studies
             </button>
             <button
               onClick={() => scrollToSection("contact")}
-              className="border border-white/20 hover:border-white/55 text-white font-bold text-base px-8 py-4 rounded-full flex items-center justify-center gap-2 transition-all duration-300 hover:bg-white/5 active:scale-[0.98] cursor-pointer group"
+              className="border border-white/80 hover:border-white text-white font-bold text-base px-8 py-4 rounded-xl flex items-center justify-center gap-2 transition-all duration-300 hover:bg-white/5 active:scale-[0.98] cursor-pointer group"
             >
               Let's Connect
               <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
@@ -113,26 +114,25 @@ export default function Hero() {
           {/* Metrics Row */}
           <motion.div
             variants={itemVariants}
-            className="w-full border-t border-white/10 pt-8 grid grid-cols-1 sm:grid-cols-3 gap-6"
+            className="flex flex-col sm:flex-row items-start gap-6 sm:gap-8 mt-3"
           >
             <div>
-              <p className="text-white/40 text-xs uppercase tracking-wider mb-1 font-semibold">
+              <p className="text-lime-green text-sm font-medium mb-1">
                 Products Designed
               </p>
-              <p className="text-2xl font-bold text-lime-green">10+</p>
+              <p className="text-3xl font-bold text-white tracking-tight">10+</p>
             </div>
-            <div className="border-t sm:border-t-0 sm:border-l border-white/10 pt-4 sm:pt-0 sm:pl-6">
-              <p className="text-white/40 text-xs uppercase tracking-wider mb-1 font-semibold">
+            <div className="sm:border-l border-white/15 pt-0 sm:pl-8">
+              <p className="text-lime-green text-sm font-medium mb-1">
                 Experience
               </p>
-              <p className="text-2xl font-bold text-lime-green">6 Years+</p>
+              <p className="text-3xl font-bold text-white tracking-tight">6 Years+</p>
             </div>
-            <div className="border-t sm:border-t-0 sm:border-l border-white/10 pt-4 sm:pt-0 sm:pl-6">
-              <p className="text-white/40 text-xs uppercase tracking-wider mb-1 font-semibold flex items-center gap-1.5">
-                <span className="w-2 h-2 rounded-full bg-lime-green inline-block" />
+            <div className="sm:border-l border-white/15 pt-0 sm:pl-8">
+              <p className="text-lime-green text-sm font-medium mb-1">
                 Open to
               </p>
-              <p className="text-sm font-semibold text-white/90 leading-tight">
+              <p className="text-lg font-bold text-white leading-tight">
                 Product Design Opportunities
               </p>
             </div>
@@ -140,47 +140,59 @@ export default function Hero() {
         </motion.div>
 
         {/* Right Column (Avatar and Starburst Decors) */}
-        <div className="lg:col-span-5 flex justify-center items-center relative">
+        <div className="lg:col-span-5 flex justify-center lg:justify-end items-center lg:items-start relative lg:pt-6">
           <motion.div
             variants={avatarVariants}
             initial="hidden"
             animate="visible"
-            className="relative w-full max-w-[400px] aspect-square rounded-3xl bg-[#8CE343]/15 border border-[#8CE343]/20 flex items-center justify-center p-4 overflow-visible"
+            className="relative w-full max-w-[340px] lg:max-w-[392px] aspect-[4/5] h-auto lg:h-[490px] overflow-visible"
           >
-            {/* The Avatar Image */}
-            <div className="w-full h-full relative rounded-2xl overflow-hidden bg-[#E2F5E5]">
-              <img
-                src="/images/hero-image.png"
-                alt="Goodness Ayano 3D Avatar"
-                className="w-full h-full object-cover scale-[1.03] object-bottom"
-              />
-            </div>
-
-            {/* Bottom-Left Starburst Decor */}
+            {/* Top-Right Starburst Decor (under the image) */}
             <motion.div
               variants={starVariants}
               initial="hidden"
               animate="visible"
-              className="absolute -bottom-8 -left-8 w-16 h-16 pointer-events-none select-none z-20"
+              className="absolute -top-10 -right-10 w-20 h-20 pointer-events-none select-none z-0"
             >
-              <img
-                src="/images/star-image.png"
-                alt="Starburst Orange Decor"
-                className="w-full h-full object-contain filter drop-shadow-lg"
+              <motion.img
+                src="/images/star-image.svg"
+                alt="Starburst Orange Accent Decor"
+                className="w-full h-full object-contain filter drop-shadow-md"
+                animate={{ rotate: -360 }}
+                transition={{
+                  repeat: Infinity,
+                  duration: 12,
+                  ease: "linear"
+                }}
               />
             </motion.div>
 
-            {/* Top-Right Starburst Decor */}
+            {/* The Avatar Image (z-10 to stay between top-right and bottom-left stars) */}
+            <div className="w-full h-full relative rounded-3xl overflow-hidden bg-lime-green z-10">
+              <img
+                src="/images/hero-image.png"
+                alt="Goodness Ayano 3D Avatar"
+                className="w-full h-full object-cover scale-[1.03] object-top" 
+              />
+            </div>
+
+            {/* Bottom-Left Starburst Decor (on top of the image) */}
             <motion.div
               variants={starVariants}
               initial="hidden"
               animate="visible"
-              className="absolute -top-8 -right-8 w-16 h-16 pointer-events-none select-none z-20"
+              className="absolute -bottom-10 -left-10 w-20 h-20 pointer-events-none select-none z-20"
             >
-              <img
-                src="/images/star-image.png"
-                alt="Starburst Orange Decor"
-                className="w-full h-full object-contain filter drop-shadow-lg"
+              <motion.img
+                src="/images/star-image.svg"
+                alt="Starburst Orange Accent Decor"
+                className="w-full h-full object-contain filter drop-shadow-md"
+                animate={{ rotate: 360 }}
+                transition={{
+                  repeat: Infinity,
+                  duration: 12,
+                  ease: "linear"
+                }}
               />
             </motion.div>
           </motion.div>

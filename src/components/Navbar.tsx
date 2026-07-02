@@ -59,6 +59,18 @@ export default function Navbar() {
 
   return (
     <>
+      {/* Top viewport blur overlay to mask scrolling content above the navbar */}
+      <div 
+        className={`fixed top-0 left-0 right-0 h-[70px] pointer-events-none z-40 transition-opacity duration-300 ${
+          scrolled ? "opacity-100" : "opacity-0"
+        }`}
+        style={{
+          background: "linear-gradient(to bottom, rgba(0, 40, 28, 0.95) 0%, rgba(0, 40, 28, 0.5) 60%, rgba(0, 40, 28, 0) 100%)",
+          backdropFilter: "blur(12px)",
+          WebkitBackdropFilter: "blur(12px)",
+        }}
+      />
+
       <motion.header
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
@@ -114,7 +126,7 @@ export default function Navbar() {
           <div className="hidden md:flex items-center">
             <button
               onClick={() => scrollTo("contact")}
-              className="bg-lime-green text-forest-green font-bold text-sm px-6 py-3 rounded-full flex items-center gap-2 transition-all duration-300 shadow-lg shadow-lime-green/10 hover:shadow-lime-green/30 hover:scale-[1.03] active:scale-[0.98] cursor-pointer"
+              className="bg-lime-green text-forest-green font-bold text-sm px-6 py-3 rounded-xl flex items-center gap-2 transition-all duration-300 shadow-lg shadow-lime-green/10 hover:shadow-lime-green/30 hover:scale-[1.03] active:scale-[0.98] cursor-pointer"
             >
               Let's Connect
               <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />

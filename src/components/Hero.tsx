@@ -77,15 +77,17 @@ export default function Hero() {
           {/* Heading */}
           <motion.h1
             variants={itemVariants}
-            className="text-2xl sm:text-5xl md:text-[50px] font-extrabold tracking-tight leading-[1.1] mb-6 font-heading max-w-[2000px]"
+            className="text-h1 mb-6 max-w-[620px]"
           >
-            Designing Products <span className="text-lime-green">People</span> Love and <span className="text-lime-green">Businesses</span> Value
+            Designing Products{" "}
+            <span className="text-lime-green relative">People</span> Love and{" "}
+            <span className="text-lime-green relative">Businesses</span> Value
           </motion.h1>
 
           {/* Subheading */}
           <motion.p
             variants={itemVariants}
-            className="text-white/70 text-lg md:text-xl font-light leading-relaxed max-w-[1000px] mb-8"
+            className="text-white/70 text-body-large max-w-[620px] mb-8"
           >
             I craft user-centered digital experiences that simplify complexity,
             solve meaningful problems, and help organizations achieve measurable outcomes.
@@ -98,13 +100,13 @@ export default function Hero() {
           >
             <button
               onClick={() => scrollToSection("case-studies")}
-              className="bg-lime-green text-forest-green font-semibold text-sm md:text-base px-8 py-4 rounded-xl flex items-center justify-center gap-2 transition-all duration-300 shadow-lg shadow-lime-green/10 hover:shadow-lime-green/20 hover:scale-[1.02] active:scale-[0.98] cursor-pointer"
+              className="bg-lime-green text-forest-green text-btn-primary px-8 py-4 rounded-xl flex items-center justify-center gap-2 transition-all duration-300 shadow-lg shadow-lime-green/10 hover:shadow-lime-green/20 hover:scale-[1.02] active:scale-[0.98] cursor-pointer"
             >
               View Case Studies
             </button>
             <button
               onClick={() => scrollToSection("contact")}
-              className="border border-white/80 hover:border-white text-white font-semibold text-sm md:text-base px-8 py-4 rounded-xl flex items-center justify-center gap-2 transition-all duration-300 hover:bg-white/5 active:scale-[0.98] cursor-pointer group"
+              className="border border-white/80 hover:border-white text-white text-btn-primary px-8 py-4 rounded-xl flex items-center justify-center gap-2 transition-all duration-300 hover:bg-white/5 active:scale-[0.98] cursor-pointer group"
             >
               Let's Connect
               <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
@@ -117,22 +119,22 @@ export default function Hero() {
             className="flex flex-col sm:flex-row items-start gap-6 sm:gap-8 mt-3"
           >
             <div>
-              <p className="text-lime-green text-sm font-medium mb-1">
+              <p className="text-lime-green text-body-small font-medium mb-1">
                 Products Designed
               </p>
-              <p className="text-sm md:text-base font-normal text-white">10+</p>
+              <p className="text-body-regular text-white">10+</p>
             </div>
             <div className="sm:border-l border-white/15 pt-0 sm:pl-8">
-              <p className="text-lime-green text-sm font-medium mb-1">
+              <p className="text-lime-green text-body-small font-medium mb-1">
                 Experience
               </p>
-              <p className="text-sm md:text-base font-normal text-white">6 Years+</p>
+              <p className="text-body-regular text-white">6 Years+</p>
             </div>
             <div className="sm:border-l border-white/15 pt-0 sm:pl-8">
-              <p className="text-lime-green text-sm font-medium mb-1">
+              <p className="text-lime-green text-body-small font-medium mb-1">
                 Open to
               </p>
-              <p className="text-sm md:text-base font-normal text-white">
+              <p className="text-body-regular text-white">
                 Product Design Opportunities
               </p>
             </div>
@@ -152,12 +154,12 @@ export default function Hero() {
               variants={starVariants}
               initial="hidden"
               animate="visible"
-              className="absolute -top-10 -right-10 w-20 h-20 pointer-events-none select-none z-0"
+              className="absolute -top-10 -right-10 w-30 h-30 pointer-events-none select-none z-0"
             >
               <motion.img
                 src="/images/star-image.svg"
                 alt="Starburst Orange Accent Decor"
-                className="w-full h-full object-contain filter drop-shadow-md"
+                className="w-full h-full object-contain"
                 animate={{ rotate: -360 }}
                 transition={{
                   repeat: Infinity,
@@ -181,12 +183,12 @@ export default function Hero() {
               variants={starVariants}
               initial="hidden"
               animate="visible"
-              className="absolute -bottom-10 -left-10 w-20 h-20 pointer-events-none select-none z-20"
+              className="absolute -bottom-14 -left-15 w-30 h-30 pointer-events-none select-none z-20"
             >
               <motion.img
                 src="/images/star-image.svg"
                 alt="Starburst Orange Accent Decor"
-                className="w-full h-full object-contain filter drop-shadow-md"
+                className="w-full h-full object-contain"
                 animate={{ rotate: 360 }}
                 transition={{
                   repeat: Infinity,

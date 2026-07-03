@@ -13,10 +13,10 @@ export default function TrustBar() {
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
         {/* Left Column (40% on large viewports) */}
         <div className="lg:col-span-5 text-left lg:border-r border-lime-green/30 lg:pr-8 py-2">
-          <h2 className="text-2xl font-bold tracking-tight text-dark-neutral mb-3 font-heading">
+          <h2 className="text-h2 text-forest-green mb-3">
             Trusted By Innovative Teams
           </h2>
-          <p className="text-muted-neutral text-sm md:text-base leading-relaxed font-light">
+          <p className="text-muted-neutral text-body-large">
             I've worked with startups, educational institutions, engineering teams, and organizations to design products that improve efficiency, engagement, and user satisfaction.
           </p>
         </div>

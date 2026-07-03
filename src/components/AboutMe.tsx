@@ -42,13 +42,13 @@ export default function AboutMe() {
           viewport={{ once: true, margin: "-100px" }}
           className="lg:col-span-7 text-left"
         >
-          <h2 className="text-3xl md:text-4xl font-extrabold text-[#032B1D] mb-6 font-heading">
+          <h2 className="text-h2 text-forest-green mb-6">
             About me
           </h2>
-          <p className="text-muted-neutral text-base md:text-lg leading-relaxed font-light mb-6">
+          <p className="text-muted-neutral text-body-large mb-6">
             I'm a Product Designer with a background in Mathematics Education and a passion for creating intuitive digital experiences that solve real-world problems. Over the years, I've designed products across education, government, fintech, ERP, e-commerce, and community platforms, translating complex requirements into simple, user-centered solutions.
           </p>
-          <p className="text-muted-neutral text-base md:text-lg leading-relaxed font-light">
+          <p className="text-muted-neutral text-body-large">
             My approach combines research, strategy, and visual design to build products that are both functional and meaningful. I love collaborating with multi-disciplinary teams to translate user pain points into seamless digital journeys.
           </p>
         </motion.div>
@@ -61,9 +61,9 @@ export default function AboutMe() {
           viewport={{ once: true, margin: "-100px" }}
           className="lg:col-span-5 flex justify-center lg:justify-end relative"
         >
-          <div className="relative w-full max-w-[340px] aspect-[4/5] rounded-3xl bg-[#8CE343]/15 border border-[#8CE343]/20 flex items-center justify-center p-3 overflow-visible">
+          <div className="relative w-full max-w-[340px] aspect-[4/5] overflow-visible">
             {/* The Photo Container */}
-            <div className="w-full h-full relative rounded-2xl overflow-hidden bg-[#032B1D]">
+            <div className="w-full h-full relative rounded-3xl overflow-hidden bg-[#032B1D]">
               <img
                 src="/images/about-img.png"
                 alt="Goodness Ayano Professional Portrait"
@@ -77,12 +77,12 @@ export default function AboutMe() {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
-              className="absolute -top-8 -right-8 w-16 h-16 pointer-events-none select-none z-20"
+              className="absolute -top-13 -right-13 w-30 h-30 pointer-events-none select-none z-20"
             >
               <motion.img
                 src="/images/star-image.svg"
                 alt="Starburst Orange Accent Decor"
-                className="w-full h-full object-contain filter drop-shadow-md"
+                className="w-full h-full object-contain"
                 animate={{ rotate: 360 }}
                 transition={{
                   repeat: Infinity,

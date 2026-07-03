@@ -55,7 +55,7 @@ export default function CaseStudies() {
           transition={{ duration: 0.5 }}
           className="text-left mb-12 md:mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-extrabold text-[#032B1D] font-heading">
+          <h2 className="text-h2 text-forest-green">
             Case Studies
           </h2>
         </motion.div>
@@ -88,12 +88,12 @@ export default function CaseStudies() {
                 </span>
 
                 {/* Title */}
-                <h3 className="text-xl md:text-xl font-bold text-dark-neutral mb-3 leading-snug font-heading group-hover:text-forest-green transition-colors">
+                <h3 className="text-h4 text-dark-neutral mb-3 group-hover:text-forest-green transition-colors">
                   {project.title}
                 </h3>
 
                 {/* Description */}
-                <p className="text-muted-neutral text-sm md:text-base leading-relaxed font-light mb-0">
+                <p className="text-muted-neutral text-body-small mb-0">
                   {project.description}
                 </p>
               </div>

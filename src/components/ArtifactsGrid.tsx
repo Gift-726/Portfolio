@@ -34,10 +34,10 @@ export default function ArtifactsGrid() {
           transition={{ duration: 0.5 }}
           className="text-left max-w-3xl mb-12 md:mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-extrabold text-forest-green mb-4 font-heading">
+          <h2 className="text-h2 text-forest-green mb-4">
             Design Artifacts
           </h2>
-          <p className="text-muted-neutral text-base md:text-lg leading-relaxed font-light">
+          <p className="text-muted-neutral text-body-large">
             A selection of interface designs, workflows, design systems, and product explorations that showcase my approach to solving problems and crafting user experiences.
           </p>
         </motion.div>
@@ -67,10 +67,10 @@ export default function ArtifactsGrid() {
                   <ZoomIn className="w-4 h-4 text-white" />
                 </div>
                 <div>
-                  <p className="text-lime-green text-xs font-semibold uppercase tracking-wider mb-1">
+                  <p className="text-lime-green text-overline mb-1">
                     Artifact {index + 1}
                   </p>
-                  <h4 className="text-white text-base font-bold font-heading line-clamp-2">
+                  <h4 className="text-white text-h5 line-clamp-2">
                     {art.title}
                   </h4>
                 </div>
@@ -125,8 +125,8 @@ export default function ArtifactsGrid() {
 
           {/* Title bar (Desktop only) */}
           <div className="text-center pt-2 pb-1 z-10 w-full max-w-2xl hidden md:block">
-            <h4 className="text-white text-lg font-bold font-heading line-clamp-1">
-              {artifacts[activeIndex].title}
+            <h4 className="text-white text-h5 line-clamp-1">
+              {/* {artifacts[activeIndex].title} */}
             </h4>
           </div>
 

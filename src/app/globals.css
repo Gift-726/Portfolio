@@ -2,15 +2,101 @@
 @import "tailwindcss";
 
 @theme {
-  --color-forest-green: #032B1D;
-  --color-off-white: #F4F9F5;
-  --color-card-white: #FFFFFF;
-  --color-dark-neutral: #111111;
-  --color-muted-neutral: #555555;
-  --color-lime-green: #8CE343;
-  --color-accent-green: #0B4632;
-  --color-orange: #FF6B00;
+  /* Colors */
+  --color-white: #FEFEFD;
+  --color-black: #010201;
+  --color-dark-surface: #0E1408;
+  --color-border: #D8D8D8;
+  --color-off-w: #F5EBE1;
+  
+  --color-primary: #8CC74F;
+  --color-primary-100: #F3F9ED;
+  --color-primary-200: #E8F4DC;
+  --color-primary-300: #D1E9B9;
+  --color-primary-400: #BADD95;
+  --color-primary-500: #A3D272;
+  --color-primary-600: #709F3F;
+  --color-primary-700: #54772F;
+  --color-primary-800: #385020;
+  --color-primary-900: #1C2810;
+  
+  --color-secondary-1: #003223;
+  --color-secondary-1-100: #E5EAE9;
+  --color-secondary-1-200: #CCD6D3;
+  --color-secondary-1-300: #99ADA7;
+  --color-secondary-1-400: #66847B;
+  --color-secondary-1-500: #335B4F;
+  --color-secondary-1-600: #00281C;
+  --color-secondary-1-700: #001E15;
+  --color-secondary-1-800: #00140E;
+  --color-secondary-1-900: #000A07;
+  
+  --color-secondary-2: #FF6400;
+  --color-secondary-2-100: #FFEFE5;
+  --color-secondary-2-200: #FFE0CC;
+  --color-secondary-2-300: #FFC199;
+  --color-secondary-2-400: #FFA266;
+  --color-secondary-2-500: #FF8333;
+  --color-secondary-2-600: #CC5000;
+  --color-secondary-2-700: #993C00;
+  --color-secondary-2-800: #662800;
+  --color-secondary-2-900: #331400;
+  
+  --color-neutral: #9D9D9D;
+  --color-neutral-100: #F5F5F5;
+  --color-neutral-200: #EBEBEB;
+  --color-neutral-300: #D8D8D8;
+  --color-neutral-400: #C4C4C4;
+  --color-neutral-500: #B1B1B1;
+  --color-neutral-600: #7E7E7E;
+  --color-neutral-700: #5E5E5E;
+  --color-neutral-800: #3F3F3F;
+  --color-neutral-900: #1F1F1F;
 
+  /* Legacy Mapping for Seamless Integration */
+  --color-forest-green: var(--color-secondary-1);
+  --color-off-white: var(--color-neutral-100);
+  --color-card-white: var(--color-white);
+  --color-dark-neutral: var(--color-black);
+  --color-muted-neutral: var(--color-neutral-700);
+  --color-lime-green: var(--color-primary);
+  --color-accent-green: var(--color-secondary-1-500);
+  --color-orange: var(--color-secondary-2);
+
+  /* Spacing */
+  --spacing-spacing-0: 0px;
+  --spacing-spacing-1: 4px;
+  --spacing-spacing-2: 8px;
+  --spacing-spacing-3: 12px;
+  --spacing-spacing-4: 16px;
+  --spacing-spacing-5: 20px;
+  --spacing-spacing-6: 24px;
+  --spacing-spacing-7: 32px;
+  --spacing-spacing-8: 40px;
+  --spacing-spacing-9: 48px;
+  --spacing-spacing-10: 64px;
+  --spacing-spacing-11: 80px;
+  --spacing-spacing-12: 96px;
+  --spacing-spacing-13: 120px;
+
+  /* Corner Radius */
+  --radius-radius-0: 0px;
+  --radius-radius-1: 2px;
+  --radius-radius-2: 4px;
+  --radius-radius-3: 8px;
+  --radius-radius-4: 12px;
+  --radius-radius-5: 16px;
+  --radius-radius-6: 24px;
+
+  /* Stroke Widths */
+  --stroke-width-stroke-0: 0px;
+  --stroke-width-stroke-00: 0.5px;
+  --stroke-width-stroke-1: 1px;
+  --stroke-width-stroke-11: 1.5px;
+  --stroke-width-stroke-2: 2px;
+  --stroke-width-stroke-3: 4px;
+
+  /* Fonts */
   --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   --font-heading: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   
@@ -80,4 +166,178 @@ body {
   background-image: url('/images/multipleG.png');
   background-repeat: repeat;
   background-size: contain;
+}
+
+/* Figma Typography Design System Utility Classes */
+@utility text-h1 {
+  font-family: var(--font-heading), sans-serif;
+  font-size: 32px;
+  line-height: 38px;
+  font-weight: 700;
+  @media (min-width: 768px) {
+    font-size: 48px;
+    line-height: 56px;
+  }
+}
+
+@utility text-h2 {
+  font-family: var(--font-heading), sans-serif;
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: 700;
+  @media (min-width: 768px) {
+    font-size: 36px;
+    line-height: 44px;
+  }
+}
+
+@utility text-h3 {
+  font-family: var(--font-heading), sans-serif;
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 700;
+  @media (min-width: 768px) {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+
+@utility text-h4 {
+  font-family: var(--font-heading), sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+  @media (min-width: 768px) {
+    font-size: 22px;
+    line-height: 28px;
+  }
+}
+
+@utility text-h5 {
+  font-family: var(--font-heading), sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 600;
+  @media (min-width: 768px) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@utility text-h6 {
+  font-family: var(--font-heading), sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+@utility text-quote {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  @media (min-width: 768px) {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+@utility text-citation {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+@utility text-body-regular {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+@utility text-body-large {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+@utility text-body-small {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+@utility text-body-xlarge {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+@utility text-btn-primary {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+@utility text-btn-secondary {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+@utility text-btn-small {
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+@utility text-form-error {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+@utility text-form-helper {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+@utility text-form-input {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+@utility text-form-label {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+@utility text-caption {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+@utility text-microcopy {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+@utility text-overline {
+  font-size: 10px;
+  line-height: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
 }

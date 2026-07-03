@@ -20,7 +20,7 @@ export default function CaseStudies() {
       badge: "Mobile App",
       title: "iWish - A Community-Powered Social Gifting Platform",
       description: "Designed a platform that enables users to create wishes, receive contributions, and manage gifting experiences through a seamless digital journey.",
-      image: "/images/case-studies/Case 1.png",
+      image: "/images/case-studies/Case 1.jpg",
       readLink: "#",
       liveLink: "#",
     },
@@ -76,7 +76,7 @@ export default function CaseStudies() {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 contrast-[93%] brightness-[97%] saturate-[95%]"
                 />
               </div>
 

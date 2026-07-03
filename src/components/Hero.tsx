@@ -98,13 +98,13 @@ export default function Hero() {
           >
             <button
               onClick={() => scrollToSection("case-studies")}
-              className="bg-lime-green text-forest-green font-bold text-base px-8 py-4 rounded-xl flex items-center justify-center gap-2 transition-all duration-300 shadow-lg shadow-lime-green/10 hover:shadow-lime-green/20 hover:scale-[1.02] active:scale-[0.98] cursor-pointer"
+              className="bg-lime-green text-forest-green font-semibold text-sm md:text-base px-8 py-4 rounded-xl flex items-center justify-center gap-2 transition-all duration-300 shadow-lg shadow-lime-green/10 hover:shadow-lime-green/20 hover:scale-[1.02] active:scale-[0.98] cursor-pointer"
             >
               View Case Studies
             </button>
             <button
               onClick={() => scrollToSection("contact")}
-              className="border border-white/80 hover:border-white text-white font-bold text-base px-8 py-4 rounded-xl flex items-center justify-center gap-2 transition-all duration-300 hover:bg-white/5 active:scale-[0.98] cursor-pointer group"
+              className="border border-white/80 hover:border-white text-white font-semibold text-sm md:text-base px-8 py-4 rounded-xl flex items-center justify-center gap-2 transition-all duration-300 hover:bg-white/5 active:scale-[0.98] cursor-pointer group"
             >
               Let's Connect
               <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
@@ -120,19 +120,19 @@ export default function Hero() {
               <p className="text-lime-green text-sm font-medium mb-1">
                 Products Designed
               </p>
-              <p className="text-2xl font-bold text-white tracking-tight">10+</p>
+              <p className="text-sm md:text-base font-normal text-white">10+</p>
             </div>
             <div className="sm:border-l border-white/15 pt-0 sm:pl-8">
               <p className="text-lime-green text-sm font-medium mb-1">
                 Experience
               </p>
-              <p className="text-2xl font-bold text-white tracking-tight">6 Years+</p>
+              <p className="text-sm md:text-base font-normal text-white">6 Years+</p>
             </div>
             <div className="sm:border-l border-white/15 pt-0 sm:pl-8">
               <p className="text-lime-green text-sm font-medium mb-1">
                 Open to
               </p>
-              <p className="text-2xl font-bold text-white leading-tight">
+              <p className="text-sm md:text-base font-normal text-white">
                 Product Design Opportunities
               </p>
             </div>

@@ -58,7 +58,7 @@ export default function ArtifactsGrid() {
               <img
                 src={art.image}
                 alt={art.title}
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 contrast-[93%] brightness-[97%] saturate-[95%]"
               />
 
               {/* Hover Overlay */}
@@ -140,7 +140,7 @@ export default function ArtifactsGrid() {
               <img
                 src={artifacts[activeIndex].image}
                 alt={artifacts[activeIndex].title}
-                className="max-w-full max-h-full object-contain rounded-lg shadow-2xl transition-all duration-300"
+                className="max-w-full max-h-full object-contain rounded-lg shadow-2xl transition-all duration-300 contrast-[95%] brightness-[99%] saturate-[97%]"
               />
             </div>
           </div>

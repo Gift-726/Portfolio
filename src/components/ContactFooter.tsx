@@ -13,7 +13,7 @@ export default function ContactFooter() {
   const [submitError, setSubmitError] = useState("");
 
   // Update this to your Formspree endpoint ID if you have one
-  const FORMSPREE_ID = ""; // e.g., "mnqeqpzw"
+  const FORMSPREE_ID = "mwvdapaq"; // e.g., "mnqeqpzw"
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -58,7 +58,7 @@ export default function ContactFooter() {
 
         const subject = encodeURIComponent(`Portfolio Inquiry from ${name}`);
         const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
-        window.location.href = `mailto:goodnessayano@gmail.com?subject=${subject}&body=${body}`;
+        window.location.href = `mailto:ayanogoodnes@gmail.com?subject=${subject}&body=${body}`;
 
         // Reset fields
         setName("");

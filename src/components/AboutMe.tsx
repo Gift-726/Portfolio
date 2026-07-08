@@ -31,7 +31,7 @@ export default function AboutMe() {
   };
 
   return (
-    <section id="about" className="bg-[#F4F9F5] py-20 md:py-28 relative overflow-hidden">
+    <section id="about" className="bg-off-white py-20 md:py-28 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center relative z-10">
         
         {/* Left Column: Headline and Bio */}
@@ -63,7 +63,7 @@ export default function AboutMe() {
         >
           <div className="relative w-full max-w-[340px] aspect-[4/5] overflow-visible">
             {/* The Photo Container */}
-            <div className="w-full h-full relative rounded-3xl overflow-hidden bg-[#032B1D]">
+            <div className="w-full h-full relative rounded-3xl overflow-hidden bg-forest-green">
               <img
                 src="/images/about-img.png"
                 alt="Goodness Ayano Professional Portrait"

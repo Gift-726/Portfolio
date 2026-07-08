@@ -131,9 +131,8 @@ export default function ContactFooter() {
           <div className="relative w-full h-[100px] md:h-[120px] rounded-2xl overflow-hidden g-pattern-bg opacity-[0.85] border border-black/[0.03]" />
         </div>
 
-        {/* Right Column (Form Card) */}
         <div className="lg:col-span-6 w-full flex justify-center lg:justify-end">
-          <div className="bg-[#F4F9F5] border border-black/[0.03] rounded-3xl p-6 md:p-8 w-full max-w-[500px] shadow-sm">
+          <div className="bg-off-white border border-black/[0.03] rounded-3xl p-6 md:p-8 w-full max-w-[500px] shadow-sm">
             <AnimatePresence mode="wait">
               {submitSuccess ? (
                 <motion.div

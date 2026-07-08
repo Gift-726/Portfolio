@@ -45,7 +45,7 @@ export default function CaseStudies() {
   ];
 
   return (
-    <section id="case-studies" className="bg-[#F3F9ed] py-20 md:py-28 relative">
+    <section id="case-studies" className="bg-off-white py-20 md:py-28 relative">
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <motion.div
@@ -83,7 +83,7 @@ export default function CaseStudies() {
               {/* Middle: Content */}
               <div className="p-6 md:p-8 flex-grow flex flex-col items-start text-left">
                 {/* Badge */}
-                <span className="inline-block bg-[#0B4632] text-white text-[10px] md:text-xs font-semibold px-3 py-1 rounded-full mb-4">
+                <span className="inline-block bg-accent-green text-white text-[10px] md:text-xs font-semibold px-3 py-1 rounded-full mb-4">
                   {project.badge}
                 </span>
 

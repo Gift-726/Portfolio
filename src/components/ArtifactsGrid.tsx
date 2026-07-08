@@ -122,10 +122,10 @@ export default function ArtifactsGrid() {
             </div>
           </div>
 
-          {/* Title bar (Desktop only) */}
-          <div className="text-center pt-2 pb-1 z-10 w-full max-w-2xl hidden md:block">
-            <h4 className="text-white text-h5 line-clamp-1">
-              {/* {artifacts[activeIndex].title} */}
+          {/* Title bar */}
+          <div className="text-center pt-2 pb-2 z-10 w-full max-w-2xl px-4 mt-4 md:mt-2">
+            <h4 className="text-white text-lg md:text-xl font-bold font-heading line-clamp-2">
+              {artifacts[activeIndex].title}
             </h4>
           </div>
 

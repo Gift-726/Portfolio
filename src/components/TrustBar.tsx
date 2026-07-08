@@ -33,7 +33,7 @@ export default function TrustBar() {
               {scrollLogos.map((logoPath, idx) => (
                 <div
                   key={idx}
-                  className="flex-shrink-0 h-10 w-28 relative flex items-center justify-center grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition-all duration-300"
+                  className="flex-shrink-0 h-10 w-28 relative flex items-center justify-center transition-all duration-300 md:grayscale md:hover:grayscale-0 md:opacity-60 md:hover:opacity-100"
                 >
                   <img
                     src={logoPath}

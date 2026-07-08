@@ -21,7 +21,7 @@ export default function CaseStudies() {
       title: "iWish - A Community-Powered Social Gifting Platform",
       description: "Designed a platform that enables users to create wishes, receive contributions, and manage gifting experiences through a seamless digital journey.",
       image: "/images/case-studies/Case 1.jpg",
-      readLink: "#",
+      readLink: "/case-study/iwish",
       liveLink: "#",
     },
     {

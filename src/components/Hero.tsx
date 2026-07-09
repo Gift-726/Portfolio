@@ -77,7 +77,7 @@ export default function Hero() {
           {/* Heading */}
           <motion.h1
             variants={itemVariants}
-            className="text-h1 mb-6 max-w-[620px]"
+            className="text-h1 mb-6 max-w-[820px]"
           >
             Designing Products{" "}
             <span className="text-lime-green relative">People</span> Love and{" "}
@@ -87,7 +87,7 @@ export default function Hero() {
           {/* Subheading */}
           <motion.p
             variants={itemVariants}
-            className="text-white/70 text-body-large max-w-[620px] mb-8"
+            className="text-white/70 text-body-large max-w-[620px] mb-10"
           >
             I craft user-centered digital experiences that simplify complexity,
             solve meaningful problems, and help organizations achieve measurable outcomes.
@@ -96,7 +96,7 @@ export default function Hero() {
           {/* CTA Buttons */}
           <motion.div
             variants={itemVariants}
-            className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto mb-10"
+            className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto mb-5"
           >
             <button
               onClick={() => scrollToSection("case-studies")}
@@ -174,7 +174,7 @@ export default function Hero() {
               <img
                 src="/images/hero-image.png"
                 alt="Goodness Ayano 3D Avatar"
-                className="w-full h-full object-cover scale-[1.03] object-top" 
+                className="w-full h-full object-cover scale-[1.05] object-top" 
               />
             </div>
 

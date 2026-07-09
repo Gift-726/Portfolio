@@ -3,11 +3,15 @@
 import { useState, useEffect } from "react";
 import { ArrowRight, Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { usePathname, useRouter } from "next/navigation";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("");
+  
+  const pathname = usePathname();
+  const router = useRouter();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -45,6 +49,12 @@ export default function Navbar() {
 
   const scrollTo = (id: string) => {
     setIsOpen(false);
+    
+    if (pathname !== "/") {
+      router.push(`/#${id}`);
+      return;
+    }
+    
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
@@ -78,15 +88,19 @@ export default function Navbar() {
         className="fixed top-6 left-0 right-0 z-50 flex justify-center px-4 sm:px-6 md:px-8 pointer-events-none"
       >
         <div 
-          className={`w-full max-w-7xl px-6 py-6 flex items-center justify-between rounded-[20px] transition-all duration-300 border backdrop-blur-xl pointer-events-auto ${
-            scrolled
-              ? "bg-forest-green/85 border-white/12 shadow-lg shadow-forest-green/15"
-              : "bg-white/[0.04] border-white/6 shadow-none"
+          className={`w-full max-w-7xl px-6 py-6 flex items-center justify-between rounded-[20px] transition-all duration-300 border backdrop-blur-xl pointer-events-auto bg-forest-green/85 border-white/12 ${
+            scrolled ? "shadow-lg shadow-forest-green/15" : "shadow-none"
           }`}
         >
           {/* Left section: Logo */}
           <div 
-            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            onClick={() => {
+              if (pathname !== "/") {
+                router.push("/");
+              } else {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }
+            }}
             className="flex items-center gap-3 cursor-pointer group"
           >
             <div className="relative w-10 h-10 transition-transform duration-300 group-hover:scale-105">

@@ -50,7 +50,7 @@ export default function IWishCaseStudy() {
             <div className="flex flex-col items-start text-left max-w-4xl">
               <motion.h1 
                 variants={itemVariants}
-                className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-forest-green tracking-tight leading-[1.15] mb-5 font-heading"
+                className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-primary tracking-tight leading-[1.15] mb-5 font-heading"
               >
                 Designing a Community-Powered Social Gifting Platform
               </motion.h1>
@@ -80,19 +80,19 @@ export default function IWishCaseStudy() {
         <section className="w-full bg-off-white border-y border-black/[0.04] py-8 my-12">
           <div className="max-w-7xl mx-auto px-6 md:px-8 grid grid-cols-2 md:grid-cols-4 gap-y-6 md:gap-y-0">
             <div className="flex flex-col items-start text-left md:border-r border-black/[0.08] last:border-r-0 md:pr-4">
-              <p className="text-accent-green text-xs font-semibold uppercase tracking-wider mb-1">Role</p>
+              <p className="text-primary text-xs font-semibold uppercase tracking-wider mb-1">Role</p>
               <p className="text-dark-neutral font-bold text-sm md:text-base">Product Designer</p>
             </div>
             <div className="flex flex-col items-start text-left md:border-r border-black/[0.08] last:border-r-0 md:pl-6 md:pr-4">
-              <p className="text-accent-green text-xs font-semibold uppercase tracking-wider mb-1">Duration</p>
+              <p className="text-primary text-xs font-semibold uppercase tracking-wider mb-1">Duration</p>
               <p className="text-dark-neutral font-bold text-sm md:text-base">3 Months</p>
             </div>
             <div className="flex flex-col items-start text-left md:border-r border-black/[0.08] last:border-r-0 md:pl-6 md:pr-4">
-              <p className="text-accent-green text-xs font-semibold uppercase tracking-wider mb-1">Tools</p>
+              <p className="text-primary text-xs font-semibold uppercase tracking-wider mb-1">Tools</p>
               <p className="text-dark-neutral font-bold text-sm md:text-base">Figma</p>
             </div>
             <div className="flex flex-col items-start text-left md:pl-6">
-              <p className="text-accent-green text-xs font-semibold uppercase tracking-wider mb-1">Platform</p>
+              <p className="text-primary text-xs font-semibold uppercase tracking-wider mb-1">Platform</p>
               <p className="text-dark-neutral font-bold text-sm md:text-base">Mobile App (iOS & Android)</p>
             </div>
           </div>
@@ -101,8 +101,8 @@ export default function IWishCaseStudy() {
         {/* CONTEXT SECTION */}
         <section className="max-w-7xl mx-auto px-6 md:px-8 py-12 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-7 text-left">
-            <span className="text-xs font-bold uppercase tracking-widest text-accent-green mb-3 inline-block">— CONTEXT</span>
-            <h2 className="text-2xl md:text-3xl font-extrabold text-forest-green mb-6 font-heading leading-tight">
+            <span className="text-xs font-bold uppercase tracking-widest text-primary mb-3 inline-block">— CONTEXT</span>
+            <h2 className="text-2xl md:text-3xl font-extrabold text-primary mb-6 font-heading leading-tight">
               Bringing Wishes, Contributions, and Community Together
             </h2>
             <p className="text-muted-neutral text-sm md:text-base leading-relaxed font-light mb-4">
@@ -126,8 +126,8 @@ export default function IWishCaseStudy() {
         {/* PROBLEM SECTION */}
         <section className="max-w-7xl mx-auto px-6 md:px-8 py-16 grid grid-cols-1 lg:grid-cols-12 gap-12 items-start border-t border-black/[0.03]">
           <div className="lg:col-span-7 text-left">
-            <span className="text-xs font-bold uppercase tracking-widest text-accent-green mb-3 inline-block">— PROBLEM</span>
-            <h2 className="text-2xl md:text-3xl font-extrabold text-forest-green mb-6 font-heading leading-tight">
+            <span className="text-xs font-bold uppercase tracking-widest text-primary mb-3 inline-block">— PROBLEM</span>
+            <h2 className="text-2xl md:text-3xl font-extrabold text-primary mb-6 font-heading leading-tight">
               Supporting a Wish Should Be Simple
             </h2>
             <p className="text-muted-neutral text-sm md:text-base leading-relaxed font-light mb-4">
@@ -161,8 +161,8 @@ export default function IWishCaseStudy() {
         {/* GOALS SECTION */}
         <section className="w-full bg-card-white border-t border-black/[0.03] py-16">
           <div className="max-w-7xl mx-auto px-6 md:px-8 text-left">
-            <span className="text-xs font-bold uppercase tracking-widest text-accent-green mb-3 inline-block">— GOALS</span>
-            <h2 className="text-2xl md:text-3xl font-extrabold text-forest-green mb-4 font-heading">
+            <span className="text-xs font-bold uppercase tracking-widest text-primary mb-3 inline-block">— GOALS</span>
+            <h2 className="text-2xl md:text-3xl font-extrabold text-primary mb-4 font-heading">
               Product Goals
             </h2>
             <p className="text-muted-neutral text-sm md:text-base mb-10 font-light max-w-2xl">
@@ -200,8 +200,8 @@ export default function IWishCaseStudy() {
             </div>
             <div className="lg:col-span-7 text-left flex flex-col gap-6">
               <div>
-                <span className="text-xs font-bold uppercase tracking-widest text-accent-green mb-3 inline-block">— INSIGHTS</span>
-                <h2 className="text-2xl md:text-3xl font-extrabold text-forest-green mb-4 font-heading leading-tight">
+                <span className="text-xs font-bold uppercase tracking-widest text-primary mb-3 inline-block">— INSIGHTS</span>
+                <h2 className="text-2xl md:text-3xl font-extrabold text-primary mb-4 font-heading leading-tight">
                   Understanding How People Give and Receive Support
                 </h2>
                 <p className="text-muted-neutral text-sm md:text-base font-light mb-2">
@@ -233,15 +233,15 @@ export default function IWishCaseStudy() {
         {/* SOLUTION SECTION */}
         <section className="w-full bg-card-white py-16">
           <div className="max-w-7xl mx-auto px-6 md:px-8 text-left">
-            <span className="text-xs font-bold uppercase tracking-widest text-accent-green mb-3 inline-block">— SOLUTION</span>
-            <h2 className="text-2xl md:text-3xl font-extrabold text-forest-green mb-12 font-heading">
+            <span className="text-xs font-bold uppercase tracking-widest text-primary mb-3 inline-block">— SOLUTION</span>
+            <h2 className="text-2xl md:text-3xl font-extrabold text-primary mb-12 font-heading">
               Crafting the Core Experience
             </h2>
 
             {/* Subsection 1 */}
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-20">
               <div className="lg:col-span-7 flex flex-col items-start">
-                <h3 className="text-xl md:text-2xl font-bold text-dark-neutral mb-4 font-heading leading-tight">
+                <h3 className="text-xl md:text-2xl font-bold text-primary mb-4 font-heading leading-tight">
                   Making Wish Creation and Giving Effortless
                 </h3>
                 <p className="text-muted-neutral text-sm md:text-base leading-relaxed font-light mb-4">
@@ -287,7 +287,7 @@ export default function IWishCaseStudy() {
                 </div>
               </div>
               <div className="lg:col-span-7 flex flex-col items-start order-1 lg:order-2">
-                <h3 className="text-xl md:text-2xl font-bold text-dark-neutral mb-4 font-heading leading-tight">
+                <h3 className="text-xl md:text-2xl font-bold text-primary mb-4 font-heading leading-tight">
                   Designing for Trust and Financial Confidence
                 </h3>
                 <p className="text-muted-neutral text-sm md:text-base leading-relaxed font-light mb-4">
@@ -318,8 +318,8 @@ export default function IWishCaseStudy() {
         <section className="w-full bg-off-white border-y border-black/[0.03] py-16">
           <div className="max-w-7xl mx-auto px-6 md:px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             <div className="lg:col-span-7 text-left">
-              <span className="text-xs font-bold uppercase tracking-widest text-accent-green mb-3 inline-block">— DECISIONS</span>
-              <h2 className="text-2xl md:text-3xl font-extrabold text-forest-green mb-6 font-heading leading-tight">
+              <span className="text-xs font-bold uppercase tracking-widest text-primary mb-3 inline-block">— DECISIONS</span>
+              <h2 className="text-2xl md:text-3xl font-extrabold text-primary mb-6 font-heading leading-tight">
                 Separating Creator and NGO Experiences
               </h2>
               <p className="text-muted-neutral text-sm md:text-base leading-relaxed font-light mb-4">
@@ -358,8 +358,8 @@ export default function IWishCaseStudy() {
         {/* SHOWCASE SECTION */}
         <section className="w-full bg-card-white py-16">
           <div className="max-w-7xl mx-auto px-6 md:px-8 text-left">
-            <span className="text-xs font-bold uppercase tracking-widest text-accent-green mb-3 inline-block">— SHOWCASE</span>
-            <h2 className="text-2xl md:text-3xl font-extrabold text-forest-green mb-6 font-heading">
+            <span className="text-xs font-bold uppercase tracking-widest text-primary mb-3 inline-block">— SHOWCASE</span>
+            <h2 className="text-2xl md:text-3xl font-extrabold text-primary mb-6 font-heading">
               A Unified Social Gifting Ecosystem
             </h2>
             <p className="text-muted-neutral text-sm md:text-base leading-relaxed font-light mb-10 max-w-4xl">
@@ -389,7 +389,7 @@ export default function IWishCaseStudy() {
           <div className="max-w-7xl mx-auto px-6 md:px-8">
             <div className="bg-accent-green/10 border border-accent-green/20 rounded-3xl p-8 md:p-12 text-left grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
               <div>
-                <h3 className="text-2xl font-bold text-accent-green mb-6 font-heading">
+                <h3 className="text-2xl font-bold text-primary mb-6 font-heading">
                   Outcome & Impact
                 </h3>
                 <ul className="space-y-3.5">
@@ -408,7 +408,7 @@ export default function IWishCaseStudy() {
                 </ul>
               </div>
               <div className="lg:border-l lg:border-accent-green/20 lg:pl-10">
-                <h3 className="text-2xl font-bold text-accent-green mb-6 font-heading">
+                <h3 className="text-2xl font-bold text-primary mb-6 font-heading">
                   Key Learnings
                 </h3>
                 <p className="text-accent-green text-sm md:text-base leading-relaxed font-light">

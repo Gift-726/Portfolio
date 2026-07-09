@@ -21,7 +21,7 @@ export default function CaseStudies() {
       title: "iWish - A Community-Powered Social Gifting Platform",
       description: "Designed a platform that enables users to create wishes, receive contributions, and manage gifting experiences through a seamless digital journey.",
       image: "/images/case-studies/Case 1.jpg",
-      readLink: "#",
+      readLink: "/case-study/iwish",
       liveLink: "#",
     },
     {
@@ -45,7 +45,7 @@ export default function CaseStudies() {
   ];
 
   return (
-    <section id="case-studies" className="bg-[#F3F9ed] py-20 md:py-28 relative">
+    <section id="case-studies" className="bg-off-white py-20 md:py-28 relative">
       <div className="max-w-7xl mx-auto px-6">
         {/* Header */}
         <motion.div
@@ -55,7 +55,7 @@ export default function CaseStudies() {
           transition={{ duration: 0.5 }}
           className="text-left mb-12 md:mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-extrabold text-[#032B1D] font-heading">
+          <h2 className="text-h2 text-forest-green">
             Case Studies
           </h2>
         </motion.div>
@@ -83,17 +83,17 @@ export default function CaseStudies() {
               {/* Middle: Content */}
               <div className="p-6 md:p-8 flex-grow flex flex-col items-start text-left">
                 {/* Badge */}
-                <span className="inline-block bg-[#0B4632] text-white text-[10px] md:text-xs font-semibold px-3 py-1 rounded-full mb-4">
+                <span className="inline-block bg-accent-green text-white text-[10px] md:text-xs font-semibold px-3 py-1 rounded-full mb-4">
                   {project.badge}
                 </span>
 
                 {/* Title */}
-                <h3 className="text-xl md:text-xl font-bold text-dark-neutral mb-3 leading-snug font-heading group-hover:text-forest-green transition-colors">
+                <h3 className="text-h4 text-dark-neutral mb-3 group-hover:text-forest-green transition-colors">
                   {project.title}
                 </h3>
 
                 {/* Description */}
-                <p className="text-muted-neutral text-sm md:text-base leading-relaxed font-light mb-0">
+                <p className="text-muted-neutral text-body-small mb-0">
                   {project.description}
                 </p>
               </div>

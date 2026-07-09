@@ -105,10 +105,10 @@ export default function ContactFooter() {
         {/* Left Column (Socials & wallpaper) */}
         <div className="lg:col-span-6 text-left flex flex-col justify-between h-full min-h-[350px]">
           <div>
-            <h2 className="text-3xl md:text-4xl font-extrabold text-forest-green mb-4 font-heading leading-tight">
+            <h2 className="text-h2 text-forest-green mb-4">
               Let's Create Better Product Experiences
             </h2>
-            <p className="text-muted-neutral text-base md:text-lg leading-relaxed font-light mb-8 max-w-xl">
+            <p className="text-muted-neutral text-body-large mb-8 max-w-xl">
               Whether you're launching a new product, improving an existing experience, or exploring a new idea, I'd love to learn about your goals and see how I can help.
             </p>
 
@@ -131,9 +131,8 @@ export default function ContactFooter() {
           <div className="relative w-full h-[100px] md:h-[120px] rounded-2xl overflow-hidden g-pattern-bg opacity-[0.85] border border-black/[0.03]" />
         </div>
 
-        {/* Right Column (Form Card) */}
         <div className="lg:col-span-6 w-full flex justify-center lg:justify-end">
-          <div className="bg-[#F4F9F5] border border-black/[0.03] rounded-3xl p-6 md:p-8 w-full max-w-[500px] shadow-sm">
+          <div className="bg-off-white border border-black/[0.03] rounded-3xl p-6 md:p-8 w-full max-w-[500px] shadow-sm">
             <AnimatePresence mode="wait">
               {submitSuccess ? (
                 <motion.div
@@ -143,10 +142,10 @@ export default function ContactFooter() {
                   className="flex flex-col items-center justify-center text-center py-10"
                 >
                   <CheckCircle2 className="w-14 h-14 text-[#0B4632] mb-4 animate-bounce" />
-                  <h3 className="text-xl font-bold text-forest-green mb-2 font-heading">
+                  <h3 className="text-h4 text-forest-green mb-2">
                     Message Sent!
                   </h3>
-                  <p className="text-muted-neutral text-sm max-w-xs mb-6">
+                  <p className="text-muted-neutral text-body-small max-w-xs mb-6">
                     Thank you for reaching out! {FORMSPREE_ID ? "I will get back to you shortly." : "Opening your default mail application to finalize your email."}
                   </p>
                   <button
@@ -216,7 +215,7 @@ export default function ContactFooter() {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full bg-lime-green hover:bg-[#83d63b] text-forest-green font-bold py-4 rounded-xl flex items-center justify-center gap-2 transition-all duration-300 shadow-md shadow-lime-green/5 hover:scale-[1.01] active:scale-[0.99] disabled:opacity-70 disabled:cursor-not-allowed cursor-pointer"
+                    className="w-full bg-lime-green hover:bg-[#83d63b] text-forest-green text-btn-primary py-4 rounded-xl flex items-center justify-center gap-2 transition-all duration-300 shadow-md shadow-lime-green/5 hover:scale-[1.01] active:scale-[0.99] disabled:opacity-70 disabled:cursor-not-allowed cursor-pointer"
                   >
                     {isSubmitting ? (
                       "Sending..."

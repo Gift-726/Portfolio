@@ -13,10 +13,10 @@ export default function TrustBar() {
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
         {/* Left Column (40% on large viewports) */}
         <div className="lg:col-span-5 text-left lg:border-r border-lime-green/30 lg:pr-8 py-2">
-          <h2 className="text-2xl font-bold tracking-tight text-dark-neutral mb-3 font-heading">
+          <h2 className="text-h2 text-forest-green mb-3">
             Trusted By Innovative Teams
           </h2>
-          <p className="text-muted-neutral text-sm md:text-base leading-relaxed font-light">
+          <p className="text-muted-neutral text-body-large">
             I've worked with startups, educational institutions, engineering teams, and organizations to design products that improve efficiency, engagement, and user satisfaction.
           </p>
         </div>
@@ -33,7 +33,7 @@ export default function TrustBar() {
               {scrollLogos.map((logoPath, idx) => (
                 <div
                   key={idx}
-                  className="flex-shrink-0 h-10 w-28 relative flex items-center justify-center grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition-all duration-300"
+                  className="flex-shrink-0 h-10 w-28 relative flex items-center justify-center transition-all duration-300 md:grayscale md:hover:grayscale-0 md:opacity-60 md:hover:opacity-100"
                 >
                   <img
                     src={logoPath}

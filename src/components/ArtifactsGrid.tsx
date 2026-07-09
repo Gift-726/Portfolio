@@ -5,16 +5,15 @@ import { ZoomIn, ChevronLeft, ChevronRight, X } from "lucide-react";
 import { useState } from "react";
 
 export default function ArtifactsGrid() {
-  // 12 items. We use Image (1).png to Image (9).png, and repeat Image (9).png for 10, 11, 12.
   const artifacts = [
-    { id: 1, image: "/images/design-artifact-img/At1.png", title: "Humanoid Landing Page Exploration" },
-    { id: 2, image: "/images/design-artifact-img/At2.png", title: "Premium E-Commerce Mockup" },
-    { id: 3, image: "/images/design-artifact-img/At3.png", title: "EdTech Dashboard Component" },
-    { id: 4, image: "/images/design-artifact-img/At4.png", title: "Creative Branding & Poster Layout" },
-    { id: 5, image: "/images/design-artifact-img/At5.png", title: "Mobile UI System Guidelines" },
-    { id: 6, image: "/images/design-artifact-img/At6.png", title: "Humanoid Dashboard Interface" },
-    { id: 7, image: "/images/design-artifact-img/At7.png", title: "Financial Admin Dashboard UX" },
-    { id: 8, image: "/images/design-artifact-img/At8.png", title: "Seamtrack App Welcome View" },
+    { id: 1, image: "/images/design-artifact-img/At1.png", title: "Premium corporate UI redesign for McGeorge Consulting." },
+    { id: 2, image: "/images/design-artifact-img/At2.png", title: "Luxury-focused web interface for 3Sevens." },
+    { id: 3, image: "/images/design-artifact-img/At3.png", title: "Onboarding flow for SeamTrack's tutoring platform." },
+    { id: 4, image: "/images/design-artifact-img/At4.png", title: "Intuitive mobile UI design for iWish." },
+    { id: 5, image: "/images/design-artifact-img/At5.png", title: "Tutor onboarding verification screen for SeamTrack." },
+    { id: 6, image: "/images/design-artifact-img/At6.png", title: "Responsive digital marketing page for McGeorge Consulting." },
+    { id: 7, image: "/images/design-artifact-img/At7.png", title: "Job card stage log dashboard for BMS auto repair software." },
+    { id: 8, image: "/images/design-artifact-img/At8.png", title: "Card gifting flow for Wow Cards." },
     { id: 9, image: "/images/design-artifact-img/At9.png", title: "Responsive Product Specs Mockup" },
     { id: 10, image: "/images/design-artifact-img/At10.png", title: "Analytics Chart UI Component" },
     { id: 11, image: "/images/design-artifact-img/At11.png", title: "Clean Web Design Elements" },
@@ -34,10 +33,10 @@ export default function ArtifactsGrid() {
           transition={{ duration: 0.5 }}
           className="text-left max-w-3xl mb-12 md:mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-extrabold text-forest-green mb-4 font-heading">
+          <h2 className="text-h2 text-forest-green mb-4">
             Design Artifacts
           </h2>
-          <p className="text-muted-neutral text-base md:text-lg leading-relaxed font-light">
+          <p className="text-muted-neutral text-body-large">
             A selection of interface designs, workflows, design systems, and product explorations that showcase my approach to solving problems and crafting user experiences.
           </p>
         </motion.div>
@@ -67,10 +66,10 @@ export default function ArtifactsGrid() {
                   <ZoomIn className="w-4 h-4 text-white" />
                 </div>
                 <div>
-                  <p className="text-lime-green text-xs font-semibold uppercase tracking-wider mb-1">
+                  <p className="text-lime-green text-overline mb-1">
                     Artifact {index + 1}
                   </p>
-                  <h4 className="text-white text-base font-bold font-heading line-clamp-2">
+                  <h4 className="text-white text-h5 line-clamp-2">
                     {art.title}
                   </h4>
                 </div>
@@ -123,9 +122,9 @@ export default function ArtifactsGrid() {
             </div>
           </div>
 
-          {/* Title bar (Desktop only) */}
-          <div className="text-center pt-2 pb-1 z-10 w-full max-w-2xl hidden md:block">
-            <h4 className="text-white text-lg font-bold font-heading line-clamp-1">
+          {/* Title bar */}
+          <div className="text-center pt-2 pb-2 z-10 w-full max-w-2xl px-4 mt-4 md:mt-2">
+            <h4 className="text-white text-lg md:text-xl font-bold font-heading line-clamp-2">
               {artifacts[activeIndex].title}
             </h4>
           </div>

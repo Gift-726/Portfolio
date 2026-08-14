@@ -113,9 +113,9 @@ export default function IWishCaseStudy() {
             </p>
           </div>
           <div className="lg:col-span-5 flex justify-center">
-            <div className="w-full max-w-[360px] max-h-[260px] aspect-[4/5] rounded-[20px] overflow-hidden shadow-sm bg-off-white border border-black/[0.02] scale-[1.04]">
+            <div className="w-full max-w-[500px] max-h-[250px] aspect-[4/5] rounded-[20px] overflow-hidden shadow-sm bg-off-white border border-black/[0.02] scale-[1.04]">
               <img
-                src="/images/case-studies/case1.jpg"
+                src="/images/case-studies/context-img.jpg"
                 alt="iWish Wallet and Transaction Interface"
                 className="w-full h-full object-cover"
               />
@@ -168,7 +168,7 @@ export default function IWishCaseStudy() {
               Product Goals
             </h2>
             <p className="text-muted-neutral text-sm md:text-base mb-10 font-light max-w-2xl">
-              To guide the design process, the project focused on four objectives:
+              To guide the design process, the project focused on three objectives:
             </p>
             <div className="bg-secondary-1 rounded-[24px] p-8 md:p-10 border border-white/5 shadow-sm">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-0">
@@ -197,7 +197,7 @@ export default function IWishCaseStudy() {
             <div className="flex justify-center">
               <div className="w-full h-[520px] aspect-[4/5] rounded-[20px] overflow-hidden shadow-sm bg-card-white border border-black/[0.02] flex items-center justify-center">
                 <img
-                  src="/images/case-studies/case1.jpg"
+                  src="/images/case-studies/insight-img.jpg"
                   alt="iWish User Research Mockups"
                   className="w-full h-full object-cover max-w-none flex-shrink-0"
                 />
@@ -255,7 +255,7 @@ export default function IWishCaseStudy() {
                 <p className="text-muted-neutral text-sm md:text-base leading-relaxed font-light mb-6">
                   To reduce friction, I designed a guided wish creation flow that progressively reveals information, helping users focus on one step at a time. The platform also supports both direct gifting and community contributions, allowing users to choose the most appropriate way to support a wish.
                 </p>
-                <ul className="space-y-3">
+                <ul className="space-y-2">
                   {[
                     "Simplified multi-step wish creation flow",
                     "Support for both direct gifting and group contributions",
@@ -269,9 +269,9 @@ export default function IWishCaseStudy() {
                   ))}
                 </ul>
               </div>
-              <div className="w-full aspect-[3/2] rounded-[20px] overflow-hidden shadow-md bg-off-white flex items-center justify-center">
+              <div className="w-full rounded-[20px] overflow-hidden shadow-md bg-off-white flex items-center justify-center">
                 <img
-                  src="/images/case-studies/case1.jpg"
+                  src="/images/case-studies/solution-img.png"
                   alt="Guided Wish Creation Interface"
                   className="w-full h-full object-cover max-w-none flex-shrink-0"
                 />
@@ -280,9 +280,9 @@ export default function IWishCaseStudy() {
 
             {/* Subsection 2 — Image LEFT | Text RIGHT */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div className="w-full aspect-[3/2] rounded-[20px] overflow-hidden shadow-md bg-off-white flex items-center justify-center order-2 lg:order-1">
+              <div className="w-full rounded-[20px] overflow-hidden shadow-md bg-off-white flex items-center justify-center order-2 lg:order-1">
                 <img
-                  src="/images/case-studies/case1.jpg"
+                  src="/images/case-studies/solution2-img.png"
                   alt="Wallet Balance and History Transactions"
                   className="w-full h-full object-cover max-w-none flex-shrink-0"
                 />
@@ -297,7 +297,7 @@ export default function IWishCaseStudy() {
                 <p className="text-muted-neutral text-sm md:text-base leading-relaxed font-light mb-6">
                   The integrated wallet further streamlined the experience by enabling users to receive funds, manage balances, withdraw earnings, and support others without leaving the platform.
                 </p>
-                <ul className="space-y-3">
+                <ul className="space-y-2">
                   {[
                     "Real-time contribution visibility",
                     "Transparent transaction feedback",

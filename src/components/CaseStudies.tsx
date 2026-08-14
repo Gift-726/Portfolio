@@ -26,7 +26,7 @@ export default function CaseStudies() {
     },
     {
       id: 2,
-      badge: "SaaS Platform",
+      badge: "Business Management Software",
       title: "BMS - Streamlining Auto Workshop Operations",
       description: "Streamlining auto repair workshop operations with a centralized system for service management, inventory tracking, and customer interactions.",
       image: "/images/case-studies/Case 2.png",
@@ -100,19 +100,43 @@ export default function CaseStudies() {
 
               {/* Bottom: Action Links Footer */}
               <div className="border-t border-black/[0.06] px-6 py-4 md:px-8 flex items-center justify-between">
-                <a
-                  href={project.readLink}
-                  className="text-dark-neutral hover:text-forest-green font-semibold text-sm transition-colors cursor-pointer"
-                >
-                  Read Case Study
-                </a>
-                <a
-                  href={project.liveLink}
-                  className="text-dark-neutral hover:text-forest-green font-semibold text-sm flex items-center gap-1.5 transition-colors cursor-pointer"
-                >
-                  View Live Site
-                  <ArrowUpRight className="w-4 h-4 text-muted-neutral group-hover:text-forest-green group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
-                </a>
+                {project.readLink && project.readLink !== "#" ? (
+                  <a
+                    href={project.readLink}
+                    className="text-dark-neutral hover:text-forest-green font-semibold text-sm transition-colors cursor-pointer"
+                  >
+                    Read Case Study
+                  </a>
+                ) : (
+                  <span
+                    aria-disabled="true"
+                    className="text-dark-neutral font-semibold text-sm opacity-40 filter blur-[1.5px] select-none pointer-events-none"
+                    title="Case study unavailable"
+                  >
+                    Read Case Study
+                  </span>
+                )}
+
+                {project.liveLink && project.liveLink !== "#" ? (
+                  <a
+                    href={project.liveLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-dark-neutral hover:text-forest-green font-semibold text-sm flex items-center gap-1.5 transition-colors cursor-pointer"
+                  >
+                    View Live Site
+                    <ArrowUpRight className="w-4 h-4 text-muted-neutral group-hover:text-forest-green group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
+                  </a>
+                ) : (
+                  <span
+                    aria-disabled="true"
+                    className="text-dark-neutral font-semibold text-sm flex items-center gap-1.5 opacity-40 filter blur-[1.5px] select-none pointer-events-none"
+                    title="Live site unavailable"
+                  >
+                    View Live Site
+                    <ArrowUpRight className="w-4 h-4 text-muted-neutral" />
+                  </span>
+                )}
               </div>
             </motion.div>
           ))}

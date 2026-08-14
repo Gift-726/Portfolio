@@ -348,7 +348,7 @@ export default function IWishCaseStudy() {
             {/* Image — RIGHT */}
             <div className="w-full aspect-[4/3] rounded-[20px] overflow-hidden shadow-md bg-off-white flex items-center justify-center">
               <img
-                src="/images/case-studies/case1.jpg"
+                src="/images/case-studies/decision-img.png"
                 alt="Personal vs NGO tabbed experience layout"
                 className="w-full h-full object-cover max-w-none shrink-0"
               />
@@ -373,11 +373,11 @@ export default function IWishCaseStudy() {
               <div className="flex flex-col gap-4 md:gap-6">
                 {/* Top Left - Tall */}
                 <div className="w-full aspect-[3.5/4.5] rounded-[20px] overflow-hidden shadow-sm bg-off-white">
-                  <img src="/images/case-studies/case1.jpg" alt="Showcase Screen 1" className="w-full h-full object-cover" />
+                  <img src="/images/case-studies/showcase-1.png" alt="Showcase Screen 1" className="w-full h-full object-cover" />
                 </div>
                 {/* Bottom Left - Short */}
                 <div className="w-full aspect-[4/3] rounded-[20px] overflow-hidden shadow-sm bg-off-white">
-                  <img src="/images/case-studies/case1.jpg" alt="Showcase Screen 2" className="w-full h-full object-cover" />
+                  <img src="/images/case-studies/showcase-2.png" alt="Showcase Screen 2" className="w-full h-full object-cover" />
                 </div>
               </div>
 
@@ -389,12 +389,12 @@ export default function IWishCaseStudy() {
                     <img src="/images/case-studies/case1.jpg" alt="Showcase Screen 3" className="w-full h-full object-cover" />
                   </div>
                   <div className="w-full aspect-[4/3] rounded-[20px] overflow-hidden shadow-sm bg-off-white">
-                    <img src="/images/case-studies/case1.jpg" alt="Showcase Screen 4" className="w-full h-full object-cover" />
+                    <img src="/images/case-studies/showcase-4.png" alt="Showcase Screen 4" className="w-full h-full object-cover" />
                   </div>
                 </div>
                 {/* Bottom Right - 1 Large Image */}
                 <div className="w-full aspect-[16/10] rounded-[20px] overflow-hidden shadow-sm bg-off-white">
-                  <img src="/images/case-studies/case1.jpg" alt="Showcase Screen 5" className="w-full h-full object-cover" />
+                  <img src="/images/case-studies/showcase-large-img.png" alt="Showcase Screen 5" className="w-full h-full object-cover" />
                 </div>
               </div>
             </div>

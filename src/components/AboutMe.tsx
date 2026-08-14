@@ -65,7 +65,7 @@ export default function AboutMe() {
             {/* The Photo Container */}
             <div className="w-full h-full relative rounded-3xl overflow-hidden bg-forest-green">
               <img
-                src="/images/about-img.png"
+                src="/images/about-image.jpg"
                 alt="Goodness Ayano Professional Portrait"
                 className="w-full h-full object-cover object-center scale-[1.02]"
               />

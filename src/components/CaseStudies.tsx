@@ -30,7 +30,7 @@ export default function CaseStudies() {
       title: "BMS - Streamlining Auto Workshop Operations",
       description: "Streamlining auto repair workshop operations with a centralized system for service management, inventory tracking, and customer interactions.",
       image: "/images/case-studies/Case 2.png",
-      readLink: "#",
+      readLink: "/case-study/bms",
       liveLink: "#",
     },
     {

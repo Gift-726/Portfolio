@@ -88,7 +88,7 @@ export default function Navbar() {
         className="fixed top-6 left-0 right-0 z-50 flex justify-center px-4 sm:px-6 md:px-8 pointer-events-none"
       >
         <div 
-          className={`w-full max-w-7xl px-6 py-6 flex items-center justify-between rounded-[20px] transition-all duration-300 border backdrop-blur-xl pointer-events-auto bg-forest-green/85 border-white/12 ${
+          className={`w-full max-w-7xl px-6 py-4 flex items-center justify-between rounded-[20px] transition-all duration-300 border backdrop-blur-xl pointer-events-auto bg-forest-green/85 border-white/12 ${
             scrolled ? "shadow-lg shadow-forest-green/15" : "shadow-none"
           }`}
         >

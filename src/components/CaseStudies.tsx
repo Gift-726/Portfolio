@@ -22,7 +22,7 @@ export default function CaseStudies() {
       description: "Designed a platform that enables users to create wishes, receive contributions, and manage gifting experiences through a seamless digital journey.",
       image: "/images/case-studies/Case 1.jpg",
       readLink: "/case-study/iwish",
-      liveLink: "#",
+      liveLink: "",
     },
     {
       id: 2,
@@ -30,8 +30,8 @@ export default function CaseStudies() {
       title: "BMS - Streamlining Auto Workshop Operations",
       description: "Streamlining auto repair workshop operations with a centralized system for service management, inventory tracking, and customer interactions.",
       image: "/images/case-studies/Case 2.png",
-      readLink: "#",
-      liveLink: "#",
+      readLink: "/case-study/bms",
+      liveLink: "",
     },
     {
       id: 3,
@@ -40,7 +40,7 @@ export default function CaseStudies() {
       description: "Designed a social reading platform that encourages engagement through discussions, reading groups, and community-driven interactions.",
       image: "/images/case-studies/Case 3.png",
       readLink: "#",
-      liveLink: "#",
+      liveLink: "https://staging.pagetwothreefour.com/",
     },
   ];
 
@@ -117,26 +117,28 @@ export default function CaseStudies() {
                   </span>
                 )}
 
-                {project.liveLink && project.liveLink !== "#" ? (
-                  <a
-                    href={project.liveLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-dark-neutral hover:text-forest-green font-semibold text-sm flex items-center gap-1.5 transition-colors cursor-pointer"
-                  >
-                    View Live Site
-                    <ArrowUpRight className="w-4 h-4 text-muted-neutral group-hover:text-forest-green group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
-                  </a>
-                ) : (
-                  <span
-                    aria-disabled="true"
-                    className="text-dark-neutral font-semibold text-sm flex items-center gap-1.5 opacity-40 filter blur-[1.5px] select-none pointer-events-none"
-                    title="Live site unavailable"
-                  >
-                    View Live Site
-                    <ArrowUpRight className="w-4 h-4 text-muted-neutral" />
-                  </span>
-                )}
+                {project.liveLink ? (
+                  project.liveLink !== "#" ? (
+                    <a
+                      href={project.liveLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-dark-neutral hover:text-forest-green font-semibold text-sm flex items-center gap-1.5 transition-colors cursor-pointer"
+                    >
+                      View Live Site
+                      <ArrowUpRight className="w-4 h-4 text-muted-neutral group-hover:text-forest-green group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
+                    </a>
+                  ) : (
+                    <span
+                      aria-disabled="true"
+                      className="text-dark-neutral font-semibold text-sm flex items-center gap-1.5 opacity-40 filter blur-[1.5px] select-none pointer-events-none"
+                      title="Live site unavailable"
+                    >
+                      View Live Site
+                      <ArrowUpRight className="w-4 h-4 text-muted-neutral" />
+                    </span>
+                  )
+                ) : null}
               </div>
             </motion.div>
           ))}

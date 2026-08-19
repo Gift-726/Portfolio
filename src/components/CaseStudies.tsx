@@ -69,48 +69,48 @@ export default function CaseStudies() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="bg-white rounded-2xl overflow-hidden flex flex-col justify-between group shadow-sm border border-black/[0.03] transition-all duration-300 hover:shadow-md hover:scale-[1.01]"
+              className="bg-white rounded-[24px] overflow-hidden flex flex-col justify-between shadow-sm border border-black/[0.03]"
             >
               {/* Top: Mockup Image Container */}
-              <div className="relative aspect-[4/3] w-full overflow-hidden bg-off-white border-b border-black/[0.04]">
+              <div className="relative aspect-[4/3] w-full bg-white p-4 md:p-5 pb-0 md:pb-0">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 contrast-[93%] brightness-[97%] saturate-[95%]"
+                  className="w-full h-full object-cover rounded-[16px] contrast-[93%] brightness-[97%] saturate-[95%]"
                 />
               </div>
 
               {/* Middle: Content */}
-              <div className="p-6 md:p-8 flex-grow flex flex-col items-start text-left">
+              <div className="px-5 pt-6 pb-4 md:px-6 md:pt-6 md:pb-6 flex-grow flex flex-col items-start text-left">
                 {/* Badge */}
-                <span className="inline-block bg-accent-green text-white text-[10px] md:text-xs font-semibold px-3 py-1 rounded-full mb-4">
+                <span className="inline-block bg-secondary-1 text-white text-[10px] md:text-xs font-semibold px-3 py-1 rounded-full mb-4">
                   {project.badge}
                 </span>
 
                 {/* Title */}
-                <h3 className="text-h4 font-sans text-dark-neutral mb-3 group-hover:text-forest-green transition-colors">
+                <h3 className="text-h4 font-sans text-secondary-1 mb-3 line-clamp-2">
                   {project.title}
                 </h3>
 
                 {/* Description */}
-                <p className="text-muted-neutral text-body-small mb-0">
+                <p className="text-muted-neutral text-body-small mb-0 line-clamp-3">
                   {project.description}
                 </p>
               </div>
 
               {/* Bottom: Action Links Footer */}
-              <div className="border-t border-black/[0.06] px-6 py-4 md:px-8 flex items-center justify-between">
+              <div className="px-5 pb-5 md:px-6 md:pb-6 flex items-center justify-between">
                 {project.readLink && project.readLink !== "#" ? (
                   <a
                     href={project.readLink}
-                    className="text-dark-neutral hover:text-forest-green font-semibold text-sm transition-colors cursor-pointer"
+                    className="text-secondary-1 font-semibold text-sm transition-colors cursor-pointer"
                   >
                     Read Case Study
                   </a>
                 ) : (
                   <span
                     aria-disabled="true"
-                    className="text-dark-neutral font-semibold text-sm opacity-40 select-none pointer-events-none"
+                    className="text-secondary-1 font-semibold text-sm opacity-40 select-none pointer-events-none"
                     title="Case study unavailable"
                   >
                     Read Case Study
@@ -123,19 +123,19 @@ export default function CaseStudies() {
                       href={project.liveLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-dark-neutral hover:text-forest-green font-semibold text-sm flex items-center gap-1.5 transition-colors cursor-pointer"
+                      className="text-secondary-1 font-semibold text-sm flex items-center gap-1.5 transition-colors cursor-pointer"
                     >
                       View Live Site
-                      <ArrowUpRight className="w-4 h-4 text-muted-neutral group-hover:text-forest-green group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
+                      <ArrowUpRight className="w-4 h-4 text-secondary-1" />
                     </a>
                   ) : (
                     <span
                       aria-disabled="true"
-                      className="text-dark-neutral font-semibold text-sm flex items-center gap-1.5 opacity-40 select-none pointer-events-none"
+                      className="text-secondary-1 font-semibold text-sm flex items-center gap-1.5 opacity-40 select-none pointer-events-none"
                       title="Live site unavailable"
                     >
                       View Live Site
-                      <ArrowUpRight className="w-4 h-4 text-muted-neutral" />
+                      <ArrowUpRight className="w-4 h-4 text-secondary-1" />
                     </span>
                   )
                 ) : null}

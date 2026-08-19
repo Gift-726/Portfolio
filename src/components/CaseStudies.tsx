@@ -88,7 +88,7 @@ export default function CaseStudies() {
                 </span>
 
                 {/* Title */}
-                <h3 className="text-h4 font-sans text-secondary-1 mb-3 line-clamp-2">
+                <h3 className="text-h4 font-sans text-black mb-3 line-clamp-2">
                   {project.title}
                 </h3>
 

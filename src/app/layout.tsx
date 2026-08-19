@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import ScrollToTop from "@/components/ScrollToTop";
 
 export const metadata: Metadata = {
   title: "Goodness Ayano | Product Design Portfolio",
@@ -15,6 +16,7 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <body className="bg-off-white font-sans text-dark-neutral min-h-screen antialiased">
         {children}
+        <ScrollToTop />
       </body>
     </html>
   );

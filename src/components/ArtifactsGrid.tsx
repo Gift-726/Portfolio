@@ -7,17 +7,17 @@ import { useState } from "react";
 export default function ArtifactsGrid() {
   const artifacts = [
     { id: 1, image: "/images/design-artifact-img/At1.png", title: "Premium corporate UI redesign for McGeorge Consulting." },
-    { id: 2, image: "/images/design-artifact-img/At2.png", title: "Luxury-focused web interface for 3Sevens." },
-    { id: 3, image: "/images/design-artifact-img/At3.png", title: "Onboarding flow for SeamTrack's tutoring platform." },
-    { id: 4, image: "/images/design-artifact-img/At4.png", title: "Intuitive mobile UI design for iWish." },
-    { id: 5, image: "/images/design-artifact-img/At5.png", title: "Tutor onboarding verification screen for SeamTrack." },
-    { id: 6, image: "/images/design-artifact-img/At6.png", title: "Responsive digital marketing page for McGeorge Consulting." },
-    { id: 7, image: "/images/design-artifact-img/At7.png", title: "Job card stage log dashboard for BMS auto repair software." },
-    { id: 8, image: "/images/design-artifact-img/At8.png", title: "Card gifting flow for Wow Cards." },
-    { id: 9, image: "/images/design-artifact-img/At9.png", title: "Responsive Product Specs Mockup" },
-    { id: 10, image: "/images/design-artifact-img/At10.png", title: "Analytics Chart UI Component" },
-    { id: 11, image: "/images/design-artifact-img/At11.png", title: "Clean Web Design Elements" },
-    { id: 12, image: "/images/design-artifact-img/At12.png", title: "Interactive Design System Tokens" },
+    { id: 2, image: "/images/design-artifact-img/At2.png", title: "Luxury-focused web interface design for 3Sevens brand." },
+    { id: 3, image: "/images/design-artifact-img/At3.png", title: "Onboarding flow design for SeamTrack's tutoring platform." },
+    { id: 4, image: "/images/design-artifact-img/At4.png", title: "Intuitive mobile UI design for iWish app." },
+    { id: 5, image: "/images/design-artifact-img/At5.png", title: "Tutor verification screen design for SeamTrack platform." },
+    { id: 6, image: "/images/design-artifact-img/At6.png", title: "Institutional Website UI design with clean visual storytelling." },
+    { id: 7, image: "/images/design-artifact-img/At7.png", title: "Job stage tracking dashboard for BMS auto repair." },
+    { id: 8, image: "/images/design-artifact-img/At8.png", title: "Card gifting flow design for Wow Cards." },
+    { id: 9, image: "/images/design-artifact-img/At9.png", title: "ERP website design for Nigerian tax compliance automation." },
+    { id: 10, image: "/images/design-artifact-img/At10.png", title: "Mobile app design for social wishlist and gifting." },
+    { id: 11, image: "/images/design-artifact-img/At11.png", title: "Website design for Nigeria's largest business chamber network." },
+    { id: 12, image: "/images/design-artifact-img/At12.png", title: "Social reading platform design for discussions and groups." },
   ];
 
   const [activeIndex, setActiveIndex] = useState<number | null>(null);

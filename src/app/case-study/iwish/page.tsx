@@ -50,7 +50,7 @@ export default function IWishCaseStudy() {
             <div className="flex flex-col items-start text-left max-w-4xl">
               <motion.h1 
                 variants={itemVariants}
-                className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-secondary-1 tracking-tight leading-[1.15] mb-5 font-heading"
+                className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-secondary-1 tracking-tight leading-[1.15] mb-5 font-sans"
               >
                 Designing a Community-Powered Social Gifting Platform
               </motion.h1>

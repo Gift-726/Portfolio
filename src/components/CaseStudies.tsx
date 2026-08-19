@@ -40,7 +40,7 @@ export default function CaseStudies() {
       description: "Designed a social reading platform that encourages engagement through discussions, reading groups, and community-driven interactions.",
       image: "/images/case-studies/Case 3.png",
       readLink: "#",
-      liveLink: "https://staging.pagetwothreefour.com/",
+      liveLink: "#", // staging.pagetwothreefour.com
     },
   ];
 
@@ -88,7 +88,7 @@ export default function CaseStudies() {
                 </span>
 
                 {/* Title */}
-                <h3 className="text-h4 text-dark-neutral mb-3 group-hover:text-forest-green transition-colors">
+                <h3 className="text-h4 font-sans text-dark-neutral mb-3 group-hover:text-forest-green transition-colors">
                   {project.title}
                 </h3>
 
@@ -110,7 +110,7 @@ export default function CaseStudies() {
                 ) : (
                   <span
                     aria-disabled="true"
-                    className="text-dark-neutral font-semibold text-sm opacity-40 filter blur-[1.5px] select-none pointer-events-none"
+                    className="text-dark-neutral font-semibold text-sm opacity-40 select-none pointer-events-none"
                     title="Case study unavailable"
                   >
                     Read Case Study
@@ -131,7 +131,7 @@ export default function CaseStudies() {
                   ) : (
                     <span
                       aria-disabled="true"
-                      className="text-dark-neutral font-semibold text-sm flex items-center gap-1.5 opacity-40 filter blur-[1.5px] select-none pointer-events-none"
+                      className="text-dark-neutral font-semibold text-sm flex items-center gap-1.5 opacity-40 select-none pointer-events-none"
                       title="Live site unavailable"
                     >
                       View Live Site

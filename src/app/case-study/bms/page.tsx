@@ -50,7 +50,7 @@ export default function BMSCaseStudy() {
             <div className="flex flex-col items-start text-left max-w-4xl">
               <motion.h1
                 variants={itemVariants}
-                className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-secondary-1 tracking-tight leading-[1.15] mb-5 font-heading"
+                className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-secondary-1 tracking-tight leading-[1.15] mb-5 font-sans"
               >
                 Streamlining Auto Workshop Operations
               </motion.h1>
@@ -247,7 +247,7 @@ export default function BMSCaseStudy() {
               </div>
               <div className="w-full rounded-[20px] overflow-hidden shadow-md bg-off-white flex items-center justify-center">
                 <img
-                  src="/images/case-studies-second/solution1.png"
+                  src="/images/case-studies-second/solution-img.png"
                   alt="Diagnosis and Repair Queue Interface"
                   className="w-full h-full object-cover"
                 />
@@ -343,11 +343,11 @@ export default function BMSCaseStudy() {
               <div className="flex flex-col gap-4 md:gap-6">
                 {/* Top Left - Tall */}
                 <div className="w-full aspect-[400/560] rounded-[20px] overflow-hidden shadow-sm bg-off-white">
-                  <img src="/images/case-studies-second/girid1-img.png" alt="Mobile app dashboard" className="w-full h-full object-cover" />
+                  <img src="/images/case-studies-second/grid-img1.png" alt="Mobile app dashboard" className="w-full h-full object-cover" />
                 </div>
                 {/* Bottom Left - Short */}
                 <div className="w-full aspect-[400/268] rounded-[20px] overflow-hidden shadow-sm bg-off-white">
-                  <img src="/images/case-studies-second/grid4-img.png" alt="Workshop tablet interface" className="w-full h-full object-cover" />
+                  <img src="/images/case-studies-second/grid-img4.png" alt="Workshop tablet interface" className="w-full h-full object-cover" />
                 </div>
               </div>
 
@@ -356,15 +356,15 @@ export default function BMSCaseStudy() {
                 {/* Top Right - 2 Short Images */}
                 <div className="grid grid-cols-2 gap-4 md:gap-6">
                   <div className="w-full aspect-[400/268] rounded-[20px] overflow-hidden shadow-sm bg-off-white">
-                    <img src="/images/case-studies-second/grid2-img.png" alt="Stock level metric card" className="w-full h-full object-cover" />
+                    <img src="/images/case-studies-second/grid-img2.png" alt="Stock level metric card" className="w-full h-full object-cover" />
                   </div>
                   <div className="w-full aspect-[400/268] rounded-[20px] overflow-hidden shadow-sm bg-off-white">
-                    <img src="/images/case-studies-second/grid3-img.png" alt="Dark mode diagnostics dashboard" className="w-full h-full object-cover" />
+                    <img src="/images/case-studies-second/grid-img3.png" alt="Dark mode diagnostics dashboard" className="w-full h-full object-cover" />
                   </div>
                 </div>
                 {/* Bottom Right - 1 Large Image */}
                 <div className="w-full aspect-[824/560] rounded-[20px] overflow-hidden shadow-sm bg-off-white">
-                  <img src="/images/case-studies-second/grid5-large-img.png" alt="Workshop overview analytics screen" className="w-full h-full object-cover" />
+                  <img src="/images/case-studies-second/grid-large-img.png" alt="Workshop overview analytics screen" className="w-full h-full object-cover" />
                 </div>
               </div>
             </div>

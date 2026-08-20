@@ -70,7 +70,7 @@ export default function BMSCaseStudy() {
               <img
                 src="/images/case-studies-second/hero-img.jpg"
                 alt="BMS Workshop Management Hero Mockup"
-                className="w-full h-auto object-cover max-h-[500px]"
+                className="w-full aspect-[4/3] md:aspect-auto h-auto object-cover max-h-[500px]"
               />
             </motion.div>
           </motion.div>

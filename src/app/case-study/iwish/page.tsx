@@ -70,7 +70,7 @@ export default function IWishCaseStudy() {
               <img
                 src="/images/case-studies/Case 1.jpg"
                 alt="iWish Mobile Gifting Mockups"
-                className="w-full h-auto object-cover max-h-[500px]"
+                className="w-full aspect-[4/3] md:aspect-auto h-auto object-cover max-h-[500px]"
               />
             </motion.div>
           </motion.div>

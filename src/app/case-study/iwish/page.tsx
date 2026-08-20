@@ -368,33 +368,33 @@ export default function IWishCaseStudy() {
             </p>
 
             {/* Showcase Grid */}
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 md:gap-6">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
               {/* Left Column (1/3) */}
-              <div className="flex flex-col gap-4 md:gap-6">
+              <div className="flex flex-col gap-6">
                 {/* Top Left - Tall */}
                 <div className="w-full aspect-[3.5/4.5] rounded-[20px] overflow-hidden shadow-sm bg-off-white">
-                  <img src="/images/case-studies/showcase-1.png" alt="Showcase Screen 1" className="w-full h-full object-contain p-2 md:p-4" />
+                  <img src="/images/case-studies/showcase-1.png" alt="Showcase Screen 1" className="w-full h-full object-cover" />
                 </div>
                 {/* Bottom Left - Short */}
                 <div className="w-full aspect-[4/3] rounded-[20px] overflow-hidden shadow-sm bg-off-white">
-                  <img src="/images/case-studies/showcase-2.png" alt="Showcase Screen 2" className="w-full h-full object-contain p-2 md:p-4" />
+                  <img src="/images/case-studies/showcase-2.png" alt="Showcase Screen 2" className="w-full h-full object-cover" />
                 </div>
               </div>
 
               {/* Right Columns (2/3) */}
-              <div className="lg:col-span-2 flex flex-col gap-4 md:gap-6">
+              <div className="lg:col-span-2 flex flex-col gap-6">
                 {/* Top Right - 2 Short Images */}
-                <div className="grid grid-cols-2 gap-4 md:gap-6">
+                <div className="grid grid-cols-2 gap-6">
                   <div className="w-full aspect-[4/3] rounded-[20px] overflow-hidden shadow-sm bg-off-white">
-                    <img src="/images/case-studies/case1.jpg" alt="Showcase Screen 3" className="w-full h-full object-contain p-2 md:p-4" />
+                    <img src="/images/case-studies/case1.jpg" alt="Showcase Screen 3" className="w-full h-full object-cover" />
                   </div>
                   <div className="w-full aspect-[4/3] rounded-[20px] overflow-hidden shadow-sm bg-off-white">
-                    <img src="/images/case-studies/showcase-4.png" alt="Showcase Screen 4" className="w-full h-full object-contain p-2 md:p-4" />
+                    <img src="/images/case-studies/showcase-4.png" alt="Showcase Screen 4" className="w-full h-full object-cover" />
                   </div>
                 </div>
                 {/* Bottom Right - 1 Large Image */}
                 <div className="w-full aspect-[16/10] rounded-[20px] overflow-hidden shadow-sm bg-off-white">
-                  <img src="/images/case-studies/showcase-large-img.png" alt="Showcase Screen 5" className="w-full h-full object-contain p-2 md:p-4" />
+                  <img src="/images/case-studies/showcase-large-img.png" alt="Showcase Screen 5" className="w-full h-full object-cover" />
                 </div>
               </div>
             </div>

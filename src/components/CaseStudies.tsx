@@ -103,14 +103,14 @@ export default function CaseStudies() {
                 {project.readLink && project.readLink !== "#" ? (
                   <a
                     href={project.readLink}
-                    className="text-secondary-1 font-semibold text-sm transition-colors cursor-pointer"
+                    className="text-black font-semibold text-sm transition-colors cursor-pointer"
                   >
                     Read Case Study
                   </a>
                 ) : (
                   <span
                     aria-disabled="true"
-                    className="text-secondary-1 font-semibold text-sm opacity-40 select-none pointer-events-none"
+                    className="text-black font-semibold text-sm opacity-40 select-none pointer-events-none"
                     title="Case study unavailable"
                   >
                     Read Case Study
@@ -123,7 +123,7 @@ export default function CaseStudies() {
                       href={project.liveLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-secondary-1 font-semibold text-sm flex items-center gap-1.5 transition-colors cursor-pointer"
+                      className="text-black font-semibold text-sm flex items-center gap-1.5 transition-colors cursor-pointer"
                     >
                       View Live Site
                       <ArrowUpRight className="w-4 h-4 text-secondary-1" />

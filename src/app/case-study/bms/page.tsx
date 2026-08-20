@@ -258,7 +258,7 @@ export default function BMSCaseStudy() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="w-full rounded-[20px] overflow-hidden shadow-md bg-off-white flex items-center justify-center order-2 lg:order-1">
                 <img
-                  src="/images/case-studies-second/solution2.png"
+                  src="/images/case-studies-second/solution2-img.png"
                   alt="Inventory and Voucher Payment Interface"
                   className="w-full h-full object-cover"
                 />
